@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<script>
+(function(){try{
+  var lang=localStorage.getItem('pharmora-lang')||'ar';
+  document.documentElement.lang=lang;
+  document.documentElement.dir=lang==='en'?'ltr':'rtl';
+  var t=localStorage.getItem('pharmora-theme');
+  if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  document.documentElement.setAttribute('data-theme',t);
+}catch(e){}})();
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>إجابات مباشرة قبل الاشتراك — Pharmora | برنامج إدارة صيدلية</title>
+<meta name="description" content="أسئلة وأجوبة لصاحب الصيدلية عن Pharmora — برنامج إدارة صيدلية ونظام إدارة صيدليات. إجابات مباشرة قبل الاشتراك، من غير مبالغة.">
+<meta name="keywords" content="Pharmora, الأسئلة الشائعة, برنامج إدارة صيدلية, نظام إدارة صيدليات, pharmacy management system, أسئلة صيدلية, AG Technologies">
+<meta property="og:type" content="website">
+<meta property="og:title" content="إجابات مباشرة قبل الاشتراك — Pharmora">
+<meta property="og:description" content="الصيدلي يسأل — Pharmora يجاوب بوضوح. إجابات مباشرة قبل الاشتراك.">
+<meta property="og:image" content="assets/img/pos-light.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<meta name="theme-color" content="#0F766E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <img src="assets/img/logo_light.png" alt="Pharmora" class="logo-img logo-light">
+      <img src="assets/img/logo_dark.png" alt="Pharmora" class="logo-img logo-dark">
+    </a>
+    <div class="nav-links">
+      <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+      <a href="product.html" data-i18n="nav.product">المنتج</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">الأسعار</a>
+      <a href="about.html" data-i18n="nav.about">عن الشركة</a>
+      <a href="security.html" data-i18n="nav.securityPage">الأمان والثقة</a>
+      <a href="faq.html" class="active" data-i18n="nav.faq">الأسئلة الشائعة</a>
+      <a href="demo.html" data-i18n="nav.demo">شرح النظام</a>
+      <a href="contact.html" data-i18n="nav.contact">تواصل</a>
+    </div>
+    <div class="nav-actions">
+      <button class="theme-btn" type="button" aria-label="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+      </button>
+      <button class="lang-btn" type="button" aria-label="Switch language"><span data-i18n="nav.lang">EN</span></button>
+      <a class="btn btn-primary" href="demo.html" data-i18n="nav.cta">اطلب شرح النظام</a>
+      <button class="nav-burger" aria-label="menu" type="button">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="nav-mobile" id="mnav">
+    <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+    <a href="product.html" data-i18n="nav.product">المنتج</a>
+    <a href="index.html#pricing" data-i18n="nav.pricing">الأسعار</a>
+    <a href="about.html" data-i18n="nav.about">عن الشركة</a>
+    <a href="security.html" data-i18n="nav.securityPage">الأمان والثقة</a>
+    <a href="faq.html" data-i18n="nav.faq">الأسئلة الشائعة</a>
+    <a href="demo.html" data-i18n="nav.demo">شرح النظام</a>
+    <a href="contact.html" data-i18n="nav.contact">تواصل</a>
+    <a class="btn btn-primary" href="demo.html" data-i18n="nav.cta">اطلب شرح النظام</a>
+  </div>
+</nav>
+
+<header class="page-hero">
+  <div class="container">
+    <span class="eyebrow" data-i18n="fq.eyebrow">قبل الاشتراك</span>
+    <h1 data-i18n="fq.title">إجابات مباشرة</h1>
+    <p data-i18n="fq.sub">الصيدلي يسأل — Pharmora يجاوب بوضوح. من غير مبالغة ولا وعود.</p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="container">
+    <div class="faq faq-page reveal">
+      <details><summary data-i18n="fq.q1">هل النظام مناسب لصيدليتي؟</summary><p data-i18n="fq.a1">نوضح لك طريقة عمل النظام ونشوف معاك هل يناسب احتياج صيدليتك قبل ما تبدأ.</p></details>
+      <details><summary data-i18n="fq.q2">كيف أعرف النسخة المناسبة لي؟</summary><p data-i18n="fq.a2">نراجع معاك شغلك — تأمين، فروع، عدد الموظفين — ونوضح لك أي نسخة تناسب احتياجك.</p></details>
+      <details><summary data-i18n="fq.q3">هل تساعدوني في إدخال بيانات الأصناف؟</summary><p data-i18n="fq.a3">نساعدك في تجهيز الأصناف والأرصدة ونحدد طريقة الإدخال حسب البيانات الموجودة عندك.</p></details>
+      <details><summary data-i18n="fq.q4">هل يمكن نقل بياناتي من نظام قديم؟</summary><p data-i18n="fq.a4">نراجع البيانات اللي عندك من البرنامج القديم أو الدفاتر ونحدد طريقة الإدخال المناسبة.</p></details>
+      <details><summary data-i18n="fq.q5">هل يوجد تدريب للموظفين؟</summary><p data-i18n="fq.a5">نساعدك في بداية التشغيل ونوضح للكاشير والصيدلي طريقة استخدام النظام حسب شغلك.</p></details>
+      <details><summary data-i18n="fq.q6">ماذا يحدث لو حصلت مشكلة؟</summary><p data-i18n="fq.a6">تتواصل معنا خلال ساعات العمل — واتساب أو بريد رسمي — ونساعدك حسب طبيعة المشكلة.</p></details>
+      <details><summary data-i18n="fq.q7">أين تحفظ بيانات الصيدلية؟</summary><p data-i18n="fq.a7">بيانات صيدليتك محفوظة لوحدها على السيرفر، مع نسخة احتياطية تلقائية.</p></details>
+      <details><summary data-i18n="fq.q8">هل أستطيع أخذ نسخة من بياناتي؟</summary><p data-i18n="fq.a8">تقدر تطلب نسخة من بياناتك — بياناتك ملكك.</p></details>
+      <details><summary data-i18n="fq.q9">هل يدعم الباركود؟</summary><p data-i18n="fq.a9">البيع بالباركود أو بالاسم. قارئ الباركود العادي يشتغل مع الجهاز اللي بتستخدمه.</p></details>
+      <details><summary data-i18n="fq.q10">هل أستطيع متابعة الصلاحيات والنواقص؟</summary><p data-i18n="fq.a10">نوضح لك تنبيهات الصلاحية والنواقص في النظام — حسب النسخة اللي تناسبك.</p></details>
+      <details><summary data-i18n="fq.q11">هل يدعم التأمين؟</summary><p data-i18n="fq.a11">في النسخة الاحترافية — نوضح فصل حصة المريض والتأمين ومتابعة المطالبات. النسخة الأساسية للبيع والمخزون.</p></details>
+      <details><summary data-i18n="fq.q12">هل أستطيع معرفة مبيعات الموظفين والورديات؟</summary><p data-i18n="fq.a12">في النسخة الاحترافية — كل وردية مربوطة بالكاشير. تقدر تراجع مبيعات الوردية حسب صلاحياتك.</p></details>
+      <details><summary data-i18n="fq.q13">هل يعمل من أكثر من جهاز؟</summary><p data-i18n="fq.a13">يشتغل من أي كمبيوتر أو تابلت مناسب لشغلك — بنفس حساب الصيدلية.</p></details>
+      <details><summary data-i18n="fq.q14">هل يحتاج إنترنت؟</summary><p data-i18n="fq.a14">محتاج اتصال إنترنت. لو النت قطع، البيعة بتتسجل لما الاتصال يرجع.</p></details>
+      <details><summary data-i18n="fq.q15">هل يدعم الفروع؟</summary><p data-i18n="fq.a15">نوضح لك خيارات إدارة الفروع حسب عدد الفروع وطريقة تشغيلك.</p></details>
+      <details><summary data-i18n="fq.q16">هل يوجد إيصال إلكتروني؟</summary><p data-i18n="fq.a16">الإيصال الإلكتروني سيتم دعمه ضمن التحديثات القادمة.</p></details>
+      <details><summary data-i18n="fq.q17">كيف أطلب شرح النظام؟</summary><p data-i18n="fq.a17">من صفحة شرح النظام أو التواصل — سيب بياناتك أو راسلنا على واتساب، ونرتب معاك الشرح على شغلك.</p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="cta-band reveal">
+      <h2 data-i18n="fq.ctaT">محتاج توضيح أكتر؟</h2>
+      <p data-i18n="fq.ctaS">اطلب شرح النظام على شغل صيدليتك — من غير التزام.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="demo.html" data-i18n="nav.cta">اطلب شرح النظام</a>
+        <a class="btn btn-ghost cta-ghost-light" href="contact.html" data-i18n="cta.contact">صفحة التواصل</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer footer-pro" id="site-footer"></footer>
+
+<a class="wa-float" data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.5.4 0 .1 0 .7-.2 1.3Z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox"><img src="" alt=""></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
