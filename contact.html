@@ -2,6 +2,16 @@
 <html lang="ar" dir="rtl">
 
 <head>
+<script>
+(function(){try{
+  var lang=localStorage.getItem('pharmora-lang')||'ar';
+  document.documentElement.lang=lang;
+  document.documentElement.dir=lang==='en'?'ltr':'rtl';
+  var t=localStorage.getItem('pharmora-theme');
+  if(t!=='light'&&t!=='dark')t=matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light';
+  document.documentElement.setAttribute('data-theme',t);
+}catch(e){}})();
+</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>تواصل معنا — Pharmora | AG Technologies</title>
@@ -9,14 +19,12 @@
   <meta name="keywords" content="Pharmora تواصل, ديمو صيدلية, اشتراك نظام صيدليات, AG Technologies">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800&family=Cairo:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@500;700&family=Inter:wght@400;600;700&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Poppins:wght@600&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <meta name="theme-color" content="#0F766E">
   <meta property="og:type" content="website">
   <meta property="og:title" content="احجز ديمو — Pharmora">
-  <meta property="og:description" content="نقطة بيع، تأمين، صلاحية، وأرباح حقيقية — نظام سحابي للصيدلية المصرية.">
+  <meta property="og:description" content="نقطة بيع، تأمين، صلاحية، وأرباح حقيقية — نظام سحابي لإدارة الصيدليات.">
   <meta property="og:image" content="assets/img/pos-light.png">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -26,21 +34,8 @@
   <nav class="nav">
     <div class="container nav-inner">
       <a href="index.html" class="logo">
-        <span class="logo-mark" aria-hidden="true">
-          <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <defs>
-              <linearGradient id="cap-5" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse">
-                <stop stop-color="#2DD4BF" />
-                <stop offset="1" stop-color="#0F766E" />
-              </linearGradient>
-            </defs>
-            <g transform="rotate(-40 12 12)">
-              <rect x="7.5" y="3" width="9" height="18" rx="4.5" fill="#CCFBF1" />
-              <path d="M7.5 12V7.5A4.5 4.5 0 0 1 12 3h0a4.5 4.5 0 0 1 4.5 4.5V12h-9Z" fill="url(#cap-5)" />
-            </g>
-          </svg>
-        </span>
-        <span class="logo-text">Pharmora<small>AG Technologies</small></span>
+      <img src="assets/img/logo_light.png" alt="Pharmora" class="logo-img logo-light">
+      <img src="assets/img/logo_dark.png" alt="Pharmora" class="logo-img logo-dark">
       </a>
           <div class="nav-links">
       <a href="index.html" data-i18n="nav.home">الرئيسية</a>
@@ -52,11 +47,11 @@
       <a href="contact.html" class="active" data-i18n="nav.contact">تواصل</a>
     </div>
     <div class="nav-actions">
-        <button class="lang-btn" type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10" />
-            <path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20" />
-          </svg><span data-i18n="nav.lang">English</span></button>
+              <button class="theme-btn" type="button" aria-label="Toggle color theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 14.5A8.5 8.5 0 1 1 9.5 3a7 7 0 0 0 11.5 11.5z"/></svg>
+      </button>
+            <button class="lang-btn" type="button" aria-label="Switch language"><span data-i18n="nav.lang">EN</span></button>
         <a class="btn btn-primary" href="demo.html" data-i18n="nav.cta">احجز ديمو مجاني</a>
         <button class="nav-burger" aria-label="menu">
           <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">

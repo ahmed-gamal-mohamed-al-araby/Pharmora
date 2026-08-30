@@ -23,11 +23,11 @@ const I18N = {
     'nav.terms': 'الشروط',
     'nav.pricing': 'الأسعار',
     'nav.cta': 'احجز ديمو مجاني',
-    'nav.lang': 'English',
+    'nav.lang': 'EN',
 
-    'hero.eyebrow': 'نظام تشغيل الصيدلية المصرية',
+    'hero.eyebrow': 'نظام إدارة الصيدليات',
     'hero.title': 'شغّل صيدليتك: البيع، المخزون، التأمين، والربح الحقيقي — في نظام واحد',
-    'hero.sub': 'Pharmora نظام سحابي لأصحاب الصيدليات في مصر: نقطة بيع سريعة، مطالبات تأمين تتحاسب بدقة، مخزون FEFO يقلل الهدر، وصافي ربح بعد التكلفة والمصروفات — مع صلاحيات وسجل تدقيق يحمي شغلك.',
+    'hero.sub': 'Pharmora نظام سحابي لأصحاب الصيدليات: نقطة بيع سريعة، مطالبات تأمين تتحاسب بدقة، مخزون FEFO يقلل الهدر، وصافي ربح بعد التكلفة والمصروفات — مع صلاحيات وسجل تدقيق يحمي شغلك.',
     'hero.cta': 'احجز ديمو مجاني',
     'hero.screens': 'شاهد النظام',
     'hero.wa': 'واتساب',
@@ -229,14 +229,12 @@ const I18N = {
     'cta.s3': 'ابدأ إدارة المبيعات',
     'cta.contact': 'صفحة التواصل',
 
-    'ft.tag': 'نظام تشغيل سحابي للصيدليات المصرية',
     'ft.brand': 'منتج من AG Technologies — برمجيات عملية لقطاع الصيدلة.',
     'ft.product': 'المنتج',
     'ft.company': 'الشركة',
     'ft.contact': 'تواصل رسمي',
     'ft.demo': 'احجز ديمو',
     'ft.rights': 'جميع الحقوق محفوظة',
-    'ft.made': 'صُنع في مصر · للصيدليات المصرية',
 
     'ab.eyebrow': 'عن Pharmora',
     'ab.title': 'نبني مستقبل إدارة الصيدليات في مصر',
@@ -526,11 +524,11 @@ const I18N = {
     'nav.terms': 'Terms',
     'nav.pricing': 'Pricing',
     'nav.cta': 'Book a free demo',
-    'nav.lang': 'العربية',
+    'nav.lang': 'ع',
 
-    'hero.eyebrow': 'The operating system for Egyptian pharmacies',
+    'hero.eyebrow': 'Pharmacy management system',
     'hero.title': 'Run your pharmacy: sales, inventory, insurance, and real profit — in one system',
-    'hero.sub': 'Pharmora is cloud software for Egyptian pharmacy owners: a fast POS, accurate insurance claims, FEFO inventory that cuts waste, and net profit after cost and expenses — with roles and an audit trail that protect your operation.',
+    'hero.sub': 'Pharmora is cloud software for pharmacy owners: a fast POS, accurate insurance claims, FEFO inventory that cuts waste, and net profit after cost and expenses — with roles and an audit trail that protect your operation.',
     'hero.cta': 'Book a free demo',
     'hero.screens': 'See the product',
     'hero.wa': 'WhatsApp',
@@ -732,14 +730,12 @@ const I18N = {
     'cta.s3': 'Start managing sales',
     'cta.contact': 'Contact page',
 
-    'ft.tag': 'Cloud operating system for Egyptian pharmacies',
     'ft.brand': 'A product by AG Technologies — practical software for pharmacy.',
     'ft.product': 'Product',
     'ft.company': 'Company',
     'ft.contact': 'Official contact',
     'ft.demo': 'Book a demo',
     'ft.rights': 'All rights reserved',
-    'ft.made': 'Made in Egypt · for Egyptian pharmacies',
 
     'ab.eyebrow': 'About Pharmora',
     'ab.title': 'Building the future of pharmacy operations in Egypt',
@@ -1031,6 +1027,9 @@ function applyLang(lang) {
     if (dict[key] !== undefined) el.setAttribute('placeholder', dict[key]);
   });
   localStorage.setItem('pharmora-lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.setAttribute('aria-label', lang === 'ar' ? 'Switch to English' : 'التبديل إلى العربية');
+  });
   const waText = encodeURIComponent(dict['ct.waMsg']);
   document.querySelectorAll('a[data-wa]').forEach(a => {
     a.href = 'https://wa.me/' + CONTACT.wa + '?text=' + waText;
@@ -1046,6 +1045,26 @@ function toggleLang() {
   applyLang(currentLang() === 'ar' ? 'en' : 'ar');
 }
 
+function currentTheme() {
+  const saved = localStorage.getItem('pharmora-theme');
+  if (saved === 'light' || saved === 'dark') return saved;
+  return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute('data-theme', theme);
+  localStorage.setItem('pharmora-theme', theme);
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (meta) meta.setAttribute('content', theme === 'dark' ? '#0B1414' : '#0F766E');
+  document.querySelectorAll('.theme-btn').forEach(btn => {
+    btn.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+  });
+}
+
+function toggleTheme() {
+  applyTheme(currentTheme() === 'dark' ? 'light' : 'dark');
+}
+
 function mountSiteFooter() {
   const el = document.getElementById('site-footer');
   if (!el) return;
@@ -1054,10 +1073,9 @@ function mountSiteFooter() {
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo">
-          <span class="logo-mark" aria-hidden="true"><svg class="logo-svg" viewBox="0 0 24 24" fill="none"><defs><linearGradient id="cap-ft" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse"><stop stop-color="#2DD4BF"/><stop offset="1" stop-color="#0F766E"/></linearGradient></defs><g transform="rotate(-40 12 12)"><rect x="7.5" y="3" width="9" height="18" rx="4.5" fill="#CCFBF1"/><path d="M7.5 12V7.5A4.5 4.5 0 0 1 12 3h0a4.5 4.5 0 0 1 4.5 4.5V12h-9Z" fill="url(#cap-ft)"/></g></svg></span>
-          <span class="logo-text">Pharmora<small>AG Technologies</small></span>
+          <img src="assets/img/logo_light.png" alt="Pharmora" class="logo-img logo-light">
+          <img src="assets/img/logo_dark.png" alt="Pharmora" class="logo-img logo-dark">
         </a>
-        <p data-i18n="ft.tag"></p>
         <p class="ft-brand-line" data-i18n="ft.brand"></p>
       </div>
       <div class="footer-col">
@@ -1083,7 +1101,6 @@ function mountSiteFooter() {
     </div>
     <div class="footer-bottom">
       <span>© <span id="yr"></span> AG Technologies — <span data-i18n="ft.rights"></span></span>
-      <span data-i18n="ft.made"></span>
     </div>
   </div>`;
 }
@@ -1104,9 +1121,11 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('[data-tel-label]').forEach(el => el.textContent = '+20 102 319 6425');
   document.querySelectorAll('[data-mail-label]').forEach(el => el.textContent = CONTACT.email);
 
+  applyTheme(currentTheme());
   applyLang(currentLang());
 
   document.querySelectorAll('.lang-btn').forEach(b => b.addEventListener('click', toggleLang));
+  document.querySelectorAll('.theme-btn').forEach(b => b.addEventListener('click', toggleTheme));
   document.querySelectorAll('#yr').forEach(el => el.textContent = new Date().getFullYear());
 
   const burger = document.querySelector('.nav-burger');
