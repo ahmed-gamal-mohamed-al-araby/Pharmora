@@ -30,7 +30,6 @@ const I18N = {
     'hero.title': 'بيع أسرع، مخزون أوضح، تأمين محسوب، وربح حقيقي — من مكان واحد',
     'hero.sub': 'برنامج إدارة صيدلية: بيع بالباركود، متابعة المخزون والصلاحية، شغل التأمين، صلاحيات للموظفين، وتقارير ربح — من أي جهاز. بيانات صيدليتك لوحدها.',
     'hero.cta': 'اطلب شرح النظام',
-    'hero.screens': 'شوف الشاشات',
     'hero.wa': 'اسأل على واتساب',
     'hero.ctaNote': 'الخطوة الجاية: شرح النظام على شغلك — من غير التزام.',
     'hero.t1': 'من أي جهاز — كمبيوتر أو تابلت',
@@ -105,34 +104,6 @@ const I18N = {
     'why.r7a': 'مكلف / معقد', 'why.r7b': 'فوضى', 'why.r7c': 'خطة فروع مخصصة',
     'why.r8': 'أمان البيانات والنسخ',
     'why.r8a': 'يعتمد على الجهاز', 'why.r8b': 'خطر فقدان الملفات', 'why.r8c': 'نسخة احتياطية + تقدر تاخد نسخة من بياناتك',
-
-    'scr.eyebrow': 'شاشات النظام',
-    'scr.title': 'شوف Pharmora من جوّه — لقطات حقيقية',
-    'scr.sub': 'اختَر شاشة وشوف إيه اللي بيظهر فيها وليه مهم لشغل الصيدلية.',
-    'scr.light': 'الوضع الفاتح',
-    'scr.dark': 'الوضع الغامق',
-    'scr.tab.pos': 'نقطة البيع',
-    'scr.tab.pos_d': 'باركود، وحدات، وتأمين في نفس الشاشة',
-    'scr.tab.claims': 'مطالبات التأمين',
-    'scr.tab.claims_d': 'متابعة المستحقات والتحصيل',
-    'scr.tab.med': 'المخزون والتشغيلات',
-    'scr.tab.med_d': 'صلاحية وتشغيلات واضحة',
-    'scr.tab.dashboard': 'لوحة التحكم',
-    'scr.tab.dashboard_d': 'مبيعات، نواقص، وصلاحيات قريبة',
-    'scr.tab.pnl': 'صافي الربح',
-    'scr.tab.pnl_d': 'بعد التكلفة والمصروفات',
-    'scr.tab.purchases': 'المشتريات',
-    'scr.tab.purchases_d': 'فواتير تشغيلات وموردين',
-    'scr.cap.pos': 'تشوف: كاشير بالباركود مع فصل التأمين. يهمك: سرعة البيع ودقة الحصة. النتيجة: فاتورة صح من أول مرة.',
-    'scr.cap.claims': 'تشوف: مطالبات ومتابعة تحصيل. يهمك: فلوس التأمين المعلقة. النتيجة: مستحقات أوضح وأسرع في المتابعة.',
-    'scr.cap.med': 'تشوف: أصناف وتشغيلات وصلاحيات. يهمك: الهدر. النتيجة: الأقرب صلاحية يتصرف أولاً — هدر أقل في الدرج.',
-    'scr.cap.dash': 'تشوف: مبيعات اليوم والنواقص والصلاحية القريبة. يهمك: قرار سريع. النتيجة: نظرة واحدة على شغل الصيدلية.',
-    'scr.cap.pnl': 'تشوف: صافي الربح بعد التكلفة والمصروفات. يهمك: الحقيقة المالية. النتيجة: قرار مبني على ربح مش على مبيعات.',
-    'scr.cap.purchases': 'تشوف: فواتير شراء بالتشغيلات. يهمك: تكلفة البضاعة والموردين. النتيجة: مخزون وتكلفة مربوطين صح.',
-
-    'vid.title': 'جولة على شغل الصيدلية',
-    'vid.sub': 'شرح عملي للنظام — بيعة بتأمين، صرف بالصلاحية، تقفيل وردية، وصافي ربح على شغل قريب من صيدليتك',
-    'vid.cta': 'اطلب شرح النظام ←',
 
     'sec.eyebrow': 'الأمان والثقة',
     'sec.title': 'بيانات صيدليتك وفلوسك — تحت سيطرتك',
@@ -601,20 +572,19 @@ const I18N = {
     'nav.why': 'Why Pharmora',
     'nav.product': 'Product',
     'nav.security': 'Trust',
-    'nav.securityPage': 'Security & Trust',
+    'nav.securityPage': 'Security',
     'nav.demo': 'Walkthrough',
     'nav.privacy': 'Privacy',
     'nav.terms': 'Terms',
     'nav.pricing': 'Pricing',
     'nav.faq': 'FAQ',
-    'nav.cta': 'Request a system walkthrough',
+    'nav.cta': 'Request a walkthrough',
     'nav.lang': 'ع',
 
     'hero.eyebrow': 'Pharmacy management system',
     'hero.title': 'Sales, inventory, insurance, and real profit — one system for your pharmacy',
     'hero.sub': 'Pharmora pharmacy management software: barcode sales, inventory and expiry tracking, insurance, staff permissions, and profit reports — on any device. Your pharmacy data stays separate.',
     'hero.cta': 'Request a system walkthrough',
-    'hero.screens': 'See the screens',
     'hero.wa': 'Ask on WhatsApp',
     'hero.ctaNote': 'Next step: a system walkthrough on your pharmacy operations — no commitment.',
     'hero.t1': 'Any device — computer or tablet',
@@ -689,34 +659,6 @@ const I18N = {
     'why.r7a': 'Costly / complex', 'why.r7b': 'Chaos', 'why.r7c': 'Dedicated branches plan',
     'why.r8': 'Data safety & backups',
     'why.r8a': 'Depends on the machine', 'why.r8b': 'File-loss risk', 'why.r8c': 'Backups + export your data',
-
-    'scr.eyebrow': 'System screens',
-    'scr.title': 'See Pharmora from the inside — real screenshots',
-    'scr.sub': 'Pick a screen and see what it shows and why it matters for daily pharmacy work.',
-    'scr.light': 'Light mode',
-    'scr.dark': 'Dark mode',
-    'scr.tab.pos': 'Point of sale',
-    'scr.tab.pos_d': 'Barcode, units, and insurance on one screen',
-    'scr.tab.claims': 'Insurance claims',
-    'scr.tab.claims_d': 'Receivables and settlement tracking',
-    'scr.tab.med': 'Inventory & batches',
-    'scr.tab.med_d': 'Clear expiry and batches',
-    'scr.tab.dashboard': 'Dashboard',
-    'scr.tab.dashboard_d': 'Sales, shortages, near-expiry',
-    'scr.tab.pnl': 'Net profit',
-    'scr.tab.pnl_d': 'After cost and expenses',
-    'scr.tab.purchases': 'Purchasing',
-    'scr.tab.purchases_d': 'Batch invoices & suppliers',
-    'scr.cap.pos': 'You see: barcode POS with insurance split. Why it matters: speed and share accuracy. Outcome: a correct invoice the first time.',
-    'scr.cap.claims': 'You see: claims and settlement tracking. Why it matters: stuck insurer money. Outcome: clearer receivables, faster follow-up.',
-    'scr.cap.med': 'You see: items, batches, expiry. Why it matters: waste. Outcome: nearest expiry dispenses first — less expired stock.',
-    'scr.cap.dash': 'You see: today\'s sales, shortages, near expiry. Why it matters: fast decisions. Outcome: one view of your pharmacy.',
-    'scr.cap.pnl': 'You see: net profit after cost and expenses. Why it matters: financial truth. Outcome: decisions based on profit, not sales.',
-    'scr.cap.purchases': 'You see: purchase invoices by batch. Why it matters: COGS and suppliers. Outcome: stock and cost stay correctly linked.',
-
-    'vid.title': 'Product walkthrough',
-    'vid.sub': 'Practical system walkthrough — insured sale, expiry dispense, shift close, and net profit close to your pharmacy operations',
-    'vid.cta': 'Request a walkthrough →',
 
     'sec.eyebrow': 'Security & trust',
     'sec.title': 'Your pharmacy data and money — under your control',
@@ -1195,11 +1137,6 @@ function applyLang(lang) {
   document.querySelectorAll('a[data-wa]').forEach(a => {
     a.href = 'https://wa.me/' + CONTACT.wa + '?text=' + waText;
   });
-  const cap = document.getElementById('scrCap');
-  const active = document.querySelector('.thumb-btn.active');
-  if (cap && active?.dataset.cap && dict[active.dataset.cap] !== undefined) {
-    cap.textContent = dict[active.dataset.cap];
-  }
 }
 
 function toggleLang() {
@@ -1309,7 +1246,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const lb = document.getElementById('lightbox');
   if (lb) {
     const lbImg = lb.querySelector('img');
-    document.querySelectorAll('.browser img, .shot img').forEach(img => {
+    document.querySelectorAll('.browser img').forEach(img => {
       img.addEventListener('click', () => {
         lbImg.src = img.src;
         lb.classList.add('open');
@@ -1318,50 +1255,6 @@ document.addEventListener('DOMContentLoaded', () => {
     lb.addEventListener('click', () => lb.classList.remove('open'));
     document.addEventListener('keydown', e => { if (e.key === 'Escape') lb.classList.remove('open'); });
   }
-
-  const flip = document.querySelector('.flip-toggle');
-  if (flip) {
-    flip.querySelectorAll('button').forEach(btn => {
-      btn.addEventListener('click', () => {
-        flip.querySelectorAll('button').forEach(b => b.classList.remove('on'));
-        btn.classList.add('on');
-        const mode = btn.dataset.mode;
-        document.querySelectorAll('img[data-light]').forEach(img => {
-          if (!img.dataset.dark) return;
-          img.src = mode === 'light' ? img.dataset.light : img.dataset.dark;
-        });
-      });
-    });
-  }
-
-  document.querySelectorAll('.band-feature').forEach(band => {
-    const mainImg = band.querySelector('.band-main-img');
-    const btns = band.querySelectorAll('.thumb-btn');
-    const cap = document.getElementById('scrCap');
-    btns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        btns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        if (btn.dataset.light) {
-          mainImg.dataset.light = btn.dataset.light;
-          mainImg.dataset.dark = btn.dataset.dark || btn.dataset.light;
-        }
-        const mode = document.querySelector('.flip-toggle button.on')?.dataset?.mode || 'light';
-        const newSrc = mode === 'dark'
-          ? (btn.dataset.dark || btn.dataset.light || btn.dataset.img)
-          : (btn.dataset.light || btn.dataset.dark || btn.dataset.img);
-        mainImg.style.opacity = '0';
-        setTimeout(() => {
-          mainImg.src = newSrc;
-          mainImg.style.opacity = '1';
-        }, 150);
-        if (cap && btn.dataset.cap) {
-          const dict = I18N[currentLang()];
-          if (dict[btn.dataset.cap] !== undefined) cap.textContent = dict[btn.dataset.cap];
-        }
-      });
-    });
-  });
 
   const form = document.getElementById('leadForm');
   if (form) {
@@ -1405,24 +1298,4 @@ document.addEventListener('DOMContentLoaded', () => {
       window.open('https://wa.me/' + CONTACT.wa + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
     });
   }
-
-  (function () {
-    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-    const band = document.querySelector('.band-feature');
-    if (!band) return;
-    const btns = [...band.querySelectorAll('.thumb-btn')];
-    if (btns.length < 2) return;
-    let timer = null, userTookOver = false;
-    const next = () => {
-      const i = btns.findIndex(b => b.classList.contains('active'));
-      btns[(i + 1) % btns.length].dispatchEvent(new Event('click', { bubbles: false }));
-    };
-    const start = () => { if (!userTookOver && !timer) timer = setInterval(next, 6000); };
-    const stop = () => { clearInterval(timer); timer = null; };
-    band.addEventListener('mouseenter', stop);
-    band.addEventListener('mouseleave', start);
-    band.addEventListener('focusin', stop);
-    btns.forEach(b => b.addEventListener('click', e => { if (e.isTrusted) { userTookOver = true; stop(); } }));
-    start();
-  })();
 });
