@@ -423,12 +423,15 @@ html[dir="ltr"] .outcome-flip .outcome-art{order:1}
   .hero-art.composition .main-screen{width:100%}
   .hero .browser{transform:none!important}
 }
+@media (max-width:768px){
+  .nav-actions>.btn-primary{display:none}
+  .nav-actions{gap:6px;flex-shrink:0}
+}
 @media (max-width:680px){
   :root{--nav-height:64px}
   .logo-img{height:40px}
   .nav-links{display:none}
   .nav-burger{display:block}
-  .nav-actions .btn-primary{padding:8px 12px;font-size:.78rem}
   .theme-btn{width:36px;height:36px}
   .lang-btn{min-width:36px;padding:8px}
   .page-hero{padding-block:48px 32px}
