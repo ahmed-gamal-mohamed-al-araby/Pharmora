@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pharmora — نظام تشغيل الصيدلية المصرية | AG Technologies</title>
+<meta name="description" content="Pharmora: نظام تشغيل سحابي للصيدليات في مصر — نقطة بيع، FEFO، مطالبات تأمين، صلاحيات وسجل تدقيق، وتقارير أرباح حقيقية.">
+<meta name="keywords" content="Pharmora, نظام صيدليات, ERP صيدلية, نقطة بيع صيدلية, تأمين صيدليات, FEFO, مصر">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@500;700;800&family=Cairo:wght@400;600;700&family=IBM+Plex+Sans+Arabic:wght@500;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
+<meta name="theme-color" content="#0F766E">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Pharmora — نظام تشغيل الصيدلية المصرية">
+<meta property="og:description" content="Pharmora نظام إدارة الصيدليات الذكي لإدارة البيع والمخزون والتأمين والأرباح.">
+<meta property="og:image" content="assets/img/pos-light.png">
+<link rel="stylesheet" href="assets/css/style.css">
+<!-- Analytics placeholders: Google Analytics / Search Console / Meta Pixel — add IDs before public launch -->
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">
+      <span class="logo-mark" aria-hidden="true">
+        <svg class="logo-svg" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs><linearGradient id="cap-1" x1="4" y1="4" x2="20" y2="20" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#2DD4BF"/><stop offset="1" stop-color="#0F766E"/>
+          </linearGradient></defs>
+          <g transform="rotate(-40 12 12)">
+            <rect x="7.5" y="3" width="9" height="18" rx="4.5" fill="#CCFBF1"/>
+            <path d="M7.5 12V7.5A4.5 4.5 0 0 1 12 3h0a4.5 4.5 0 0 1 4.5 4.5V12h-9Z" fill="url(#cap-1)"/>
+          </g>
+        </svg>
+      </span>
+      <span class="logo-text">Pharmora<small>AG Technologies</small></span>
+    </a>
+        <div class="nav-links">
+      <a href="index.html" class="active" data-i18n="nav.home">الرئيسية</a>
+      <a href="product.html" data-i18n="nav.product">المنتج</a>
+      <a href="index.html#pricing" data-i18n="nav.pricing">الأسعار</a>
+      <a href="about.html" data-i18n="nav.about">عن الشركة</a>
+      <a href="security.html" data-i18n="nav.securityPage">الأمان والثقة</a>
+      <a href="demo.html" data-i18n="nav.demo">الديمو</a>
+      <a href="contact.html" data-i18n="nav.contact">تواصل</a>
+    </div>
+    <div class="nav-actions">
+      <button class="lang-btn" type="button"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20"/></svg><span data-i18n="nav.lang">English</span></button>
+      <a class="btn btn-primary" href="demo.html" data-i18n="nav.cta">احجز ديمو مجاني</a>
+      <button class="nav-burger" aria-label="menu" type="button">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+    <div class="nav-mobile" id="mnav">
+    <a href="index.html" data-i18n="nav.home">الرئيسية</a>
+    <a href="product.html" data-i18n="nav.product">المنتج</a>
+    <a href="index.html#pricing" data-i18n="nav.pricing">الأسعار</a>
+    <a href="about.html" data-i18n="nav.about">عن الشركة</a>
+    <a href="security.html" data-i18n="nav.securityPage">الأمان والثقة</a>
+    <a href="demo.html" data-i18n="nav.demo">الديمو</a>
+    <a href="contact.html" data-i18n="nav.contact">تواصل</a>
+    <a class="btn btn-primary" href="demo.html" data-i18n="nav.cta">احجز ديمو مجاني</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow" data-i18n="hero.eyebrow">نظام تشغيل الصيدلية المصرية</span>
+      <h1 data-i18n="hero.title">شغّل صيدليتك: البيع، المخزون، التأمين، والربح الحقيقي — في نظام واحد</h1>
+      <p class="hero-sub" data-i18n="hero.sub">Pharmora نظام سحابي لأصحاب الصيدليات في مصر: نقطة بيع سريعة، مطالبات تأمين تتحاسب بدقة، مخزون FEFO يقلل الهدر، وصافي ربح بعد التكلفة والمصروفات — مع صلاحيات وسجل تدقيق يحمي شغلك.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="demo.html" data-i18n="hero.cta">احجز ديمو مجاني</a>
+        <a class="btn btn-ghost" href="#product" data-i18n="hero.screens">شاهد النظام</a>
+        <a class="btn btn-ghost btn-wa-soft" data-wa href="#" target="_blank" rel="noopener" data-i18n="hero.wa">واتساب</a>
+      </div>
+      <ul class="hero-trust" aria-label="trust">
+        <li data-i18n="hero.t1">سحابي — من أي جهاز</li>
+        <li data-i18n="hero.t2">صلاحيات + سجل تدقيق</li>
+        <li data-i18n="hero.t3">بياناتك قابلة للتصدير</li>
+        <li data-i18n="hero.t4">إعداد وتدريب ضمن الاشتراك</li>
+      </ul>
+    </div>
+    <div class="reveal hero-visual">
+      <div class="hero-art composition">
+        <div class="browser main-screen">
+          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/pos</span></div>
+          <img src="assets/img/pos-light.png" data-dark="assets/img/pos-dark.png" data-light="assets/img/pos-light.png" alt="Pharmora POS" width="1200" height="750" loading="eager" fetchpriority="high">
+        </div>
+        <div class="browser floating-screen checkout-float">
+          <div class="browser-bar"><i></i><i></i><i></i></div>
+          <img src="assets/img/checkout-light.png" data-dark="assets/img/checkout-dark.png" data-light="assets/img/checkout-light.png" alt="Checkout with insurance" width="480" height="600" loading="eager">
+        </div>
+        <div class="browser floating-screen dash-float">
+          <div class="browser-bar"><i></i><i></i><i></i></div>
+          <img src="assets/img/dashboard-light.png" data-dark="assets/img/dashboard-dark.png" data-light="assets/img/dashboard-light.png" alt="Dashboard" width="640" height="400" loading="lazy">
+        </div>
+      </div>
+      <p class="hero-caption" data-i18n="hero.caption">لقطات حقيقية من النظام — مش تصميمات تسويقية</p>
+    </div>
+  </div>
+</header>
+
+<div class="strip trust-strip">
+  <div class="container strip-inner">
+    <span><b data-i18n="strip.s1">عزل بيانات كل صيدلية</b></span>
+    <span><b data-i18n="strip.s2">أدوار وصلاحيات</b></span>
+    <span><b data-i18n="strip.s3">سجل تدقيق للحركات الحساسة</b></span>
+    <span><b data-i18n="strip.s4">نسخ احتياطي سحابي</b></span>
+    <span><b data-i18n="strip.s5">تصدير وملكية البيانات</b></span>
+  </div>
+</div>
+
+<section class="section" id="outcomes">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="out.eyebrow">نتائج العمل</span>
+      <h2 data-i18n="out.title">من مشكلة يومية… لحل واضح… لأثر على الفلوس</h2>
+      <p data-i18n="out.sub">مش قائمة ميزات. كل قسم تحت يجاوب: إيه المشكلة، إزاي Pharmora بيحلها، وإيه اللي يتحسن في شغلك.</p>
+    </div>
+
+    <article class="outcome reveal">
+      <div class="outcome-text">
+        <span class="outcome-label" data-i18n="out.ins.label">١ — مطالبات التأمين</span>
+        <p class="outcome-problem" data-i18n="out.ins.problem">المشكلة: آخر الشهر بتضيع أيام في فصل حصة التأمين ومراجعة المطالبات يدوي.</p>
+        <h3 data-i18n="out.ins.solution">الحل: فصل تلقائي لحصة المريض وشركة التأمين على مستوى كل دواء</h3>
+        <p data-i18n="out.ins.desc">تغطية لكل شركة، متابعة المطالبة لحد التحصيل، وأرقام واضحة لمستحقاتك — من غير إكسيل.</p>
+        <p class="outcome-result"><strong data-i18n="out.ins.result">الأثر: اعرف مستحقاتك بدقة ووفّر أيام المراجعة اليدوية.</strong></p>
+      </div>
+      <div class="outcome-art">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/claims</span></div>
+          <img src="assets/img/claims-light.png" alt="Insurance claims" width="1100" height="700" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="outcome outcome-flip reveal">
+      <div class="outcome-text">
+        <span class="outcome-label" data-i18n="out.fefo.label">٢ — المخزون والصلاحية (FEFO)</span>
+        <p class="outcome-problem" data-i18n="out.fefo.problem">المشكلة: أدوية بتقرب من الانتهاء وبتنتهي في الدرج — خسارة صامتة كل شهر.</p>
+        <h3 data-i18n="out.fefo.solution">الحل: مخزون بالتشغيلة مع FEFO — الأقرب صلاحية بيتصرف أولاً</h3>
+        <p data-i18n="out.fefo.desc">كل تشغيلة بتاريخها، تنبيهات قبل الانتهاء، وصرف تلقائي يمنع بيع الأبعد صلاحية بالغلط.</p>
+        <p class="outcome-result"><strong data-i18n="out.fefo.result">الأثر: هدر أقل، مخزون أوضح، وصلاحية تحت السيطرة.</strong></p>
+      </div>
+      <div class="outcome-art">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/medicines</span></div>
+          <img src="assets/img/medicines-light.png" alt="Medicines and batches" width="1100" height="700" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="outcome reveal">
+      <div class="outcome-text">
+        <span class="outcome-label" data-i18n="out.pnl.label">٣ — الربح الحقيقي</span>
+        <p class="outcome-problem" data-i18n="out.pnl.problem">المشكلة: إجمالي المبيعات بيضحك عليك — مش بيقولك صيدليتك كسبانة فعلاً ولا لأ.</p>
+        <h3 data-i18n="out.pnl.solution">الحل: صافي ربح بعد التكلفة والمرتجعات والمصروفات والتأمين</h3>
+        <p data-i18n="out.pnl.desc">حساب على مستوى التشغيلة. تشوف الربح بعد تكلفة البضاعة والمصروفات المعتمدة — مش أرقام تجميلية.</p>
+        <p class="outcome-result"><strong data-i18n="out.pnl.result">الأثر: قرار مبني على ربح حقيقي — مش على «إجمالي مبيعات».</strong></p>
+      </div>
+      <div class="outcome-art">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/reports/pnl</span></div>
+          <img src="assets/img/pnl-light.png" data-dark="assets/img/pnl-dark.png" data-light="assets/img/pnl-light.png" alt="Profit and loss" width="1100" height="700" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="outcome outcome-flip reveal">
+      <div class="outcome-text">
+        <span class="outcome-label" data-i18n="out.cash.label">٤ — تحكم الكاشير والورديات</span>
+        <p class="outcome-problem" data-i18n="out.cash.problem">المشكلة: مش عارف النقدية المتوقعة آخر الوردية، ولا مين عدّل فاتورة أو سعر.</p>
+        <h3 data-i18n="out.cash.solution">الحل: ورديات بعُهدة درج + صلاحيات + سجل تدقيق للحركات الحساسة</h3>
+        <p data-i18n="out.cash.desc">كل كاشير بوردية لها بداية ونهاية. النظام بيحسب النقدية المتوقعة ويكشف العجز أو الزيادة، والصاحب يراجع الحركات الحساسة.</p>
+        <p class="outcome-result"><strong data-i18n="out.cash.result">الأثر: فلوس الدرج أوضح، والمسؤولية واضحة على كل مستخدم.</strong></p>
+      </div>
+      <div class="outcome-art">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/dashboard</span></div>
+          <img src="assets/img/dashboard-light.png" data-dark="assets/img/dashboard-dark.png" data-light="assets/img/dashboard-light.png" alt="Dashboard and shifts" width="1100" height="700" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="outcome reveal">
+      <div class="outcome-text">
+        <span class="outcome-label" data-i18n="out.branch.label">٥ — إدارة الفروع</span>
+        <p class="outcome-problem" data-i18n="out.branch.problem">المشكلة: كل فرع بأرقام منفصلة، وصعب تشوف الصورة الكاملة للمبيعات والمخزون والربح.</p>
+        <h3 data-i18n="out.branch.solution">الحل: أكتر من فرع تحت حساب واحد — بنفس الضوابط والتقارير</h3>
+        <p data-i18n="out.branch.desc">خطة الفروع مصممة لسلاسل الصيدليات: إعداد مخصص، تدريب للفريق، ودعم بأولوية — مع نفس دقة التأمين والمخزون والربح.</p>
+        <p class="outcome-result"><strong data-i18n="out.branch.result">الأثر: رؤية موحّدة للشغل عبر الفروع من غير ما تفقد التحكم.</strong></p>
+      </div>
+      <div class="outcome-art">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/purchases</span></div>
+          <img src="assets/img/purchases.png" alt="Purchases across operations" width="1100" height="700" loading="lazy">
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="section why-sec" id="why">
+  <div class="container">
+    <div class="section-head reveal center">
+      <span class="eyebrow" data-i18n="why.eyebrow">ليه Pharmora؟</span>
+      <h2 data-i18n="why.title">قارن بوضوح: برنامج قديم · إكسيل · Pharmora</h2>
+      <p data-i18n="why.sub">الفرق مش في «شاشة حلوة» — الفرق في التأمين، الصلاحية، التحكم، والتقارير المالية.</p>
+    </div>
+    <div class="compare-wrap reveal">
+      <table class="compare">
+        <thead>
+          <tr>
+            <th data-i18n="why.col0">القدرة</th>
+            <th data-i18n="why.col1">برنامج قديم / محلي</th>
+            <th data-i18n="why.col2">إكسيل / دفاتر</th>
+            <th class="hl" data-i18n="why.col3">Pharmora</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td data-i18n="why.r1">وصول سحابي من أي جهاز</td><td data-i18n="why.r1a">محدود / جهاز واحد</td><td data-i18n="why.r1b">ملفات مشتتة</td><td class="hl" data-i18n="why.r1c">نعم — متصفح</td></tr>
+          <tr><td data-i18n="why.r2">سير عمل التأمين والمطالبات</td><td data-i18n="why.r2a">غالباً يدوي أو ناقص</td><td data-i18n="why.r2b">يدوي بالكامل</td><td class="hl" data-i18n="why.r2c">فصل تلقائي + متابعة</td></tr>
+          <tr><td data-i18n="why.r3">مخزون FEFO / تشغيلات</td><td data-i18n="why.r3a">متفاوت</td><td data-i18n="why.r3b">صعب الحفاظ عليه</td><td class="hl" data-i18n="why.r3c">مدمج في الصرف</td></tr>
+          <tr><td data-i18n="why.r4">صلاحيات المستخدمين</td><td data-i18n="why.r4a">أساسية غالباً</td><td data-i18n="why.r4b">لا</td><td class="hl" data-i18n="why.r4c">أدوار مفصّلة</td></tr>
+          <tr><td data-i18n="why.r5">سجل تدقيق</td><td data-i18n="why.r5a">نادر أو ضعيف</td><td data-i18n="why.r5b">لا</td><td class="hl" data-i18n="why.r5c">حركات حساسة مسجّلة</td></tr>
+          <tr><td data-i18n="why.r6">تقارير ربح حقيقية</td><td data-i18n="why.r6a">مبيعات أكثر من ربح</td><td data-i18n="why.r6b">تقريبي</td><td class="hl" data-i18n="why.r6c">صافي بعد التكلفة والمصروفات</td></tr>
+          <tr><td data-i18n="why.r7">متعدد الفروع</td><td data-i18n="why.r7a">مكلف / معقد</td><td data-i18n="why.r7b">فوضى</td><td class="hl" data-i18n="why.r7c">خطة فروع مخصصة</td></tr>
+          <tr><td data-i18n="why.r8">أمان البيانات والنسخ</td><td data-i18n="why.r8a">يعتمد على الجهاز</td><td data-i18n="why.r8b">خطر فقدان الملفات</td><td class="hl" data-i18n="why.r8c">سحابي + نسخ + تصدير</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section screens" id="product">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="scr.eyebrow">تجربة المنتج</span>
+      <h2 data-i18n="scr.title">شوف Pharmora من جوّه — لقطات حقيقية</h2>
+      <p data-i18n="scr.sub">اختَر شاشة: إيه اللي بتشوفه، وليه مهم لشغل الصيدلية، وإيه النتيجة على الشغل.</p>
+    </div>
+
+    <a class="video-ph reveal" href="demo.html" aria-label="Product walkthrough">
+      <div class="video-ph-inner">
+        <span class="play-btn" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7Z"/></svg></span>
+        <div>
+          <b data-i18n="vid.title">جولة منتج ١٥ دقيقة</b>
+          <span data-i18n="vid.sub">احجز ديمو مباشر — بيعة بتأمين، FEFO، وردية، وصافي ربح</span>
+        </div>
+      </div>
+      <span class="video-cta" data-i18n="vid.cta">احجز الموعد ←</span>
+    </a>
+
+    <div class="flip-wrap reveal">
+      <div class="flip-toggle">
+        <button type="button" data-mode="light" class="on" data-i18n="scr.light">الوضع الفاتح</button>
+        <button type="button" data-mode="dark" data-i18n="scr.dark">الوضع الغامق</button>
+      </div>
+    </div>
+
+    <div class="band-feature reveal">
+      <div class="band-text">
+        <div class="band-thumbs display-block">
+          <button class="thumb-btn active" type="button" data-img="assets/img/pos-light.png" data-light="assets/img/pos-light.png" data-dark="assets/img/pos-dark.png" data-cap="scr.cap.pos">
+            <span data-i18n="scr.tab.pos">نقطة البيع</span>
+            <small data-i18n="scr.tab.pos_d" class="t-desc">باركود، وحدات، وتأمين في نفس الشاشة</small>
+          </button>
+          <button class="thumb-btn" type="button" data-img="assets/img/claims-light.png" data-light="assets/img/claims-light.png" data-dark="assets/img/claims-light.png" data-cap="scr.cap.claims">
+            <span data-i18n="scr.tab.claims">مطالبات التأمين</span>
+            <small data-i18n="scr.tab.claims_d" class="t-desc">متابعة المستحقات والتحصيل</small>
+          </button>
+          <button class="thumb-btn" type="button" data-img="assets/img/medicines-light.png" data-light="assets/img/medicines-light.png" data-dark="assets/img/medicines-light.png" data-cap="scr.cap.med">
+            <span data-i18n="scr.tab.med">المخزون والتشغيلات</span>
+            <small data-i18n="scr.tab.med_d" class="t-desc">صلاحية وتشغيلات واضحة</small>
+          </button>
+          <button class="thumb-btn" type="button" data-img="assets/img/dashboard-light.png" data-light="assets/img/dashboard-light.png" data-dark="assets/img/dashboard-dark.png" data-cap="scr.cap.dash">
+            <span data-i18n="scr.tab.dashboard">لوحة التحكم</span>
+            <small data-i18n="scr.tab.dashboard_d" class="t-desc">مبيعات، نواقص، وصلاحيات قريبة</small>
+          </button>
+          <button class="thumb-btn" type="button" data-img="assets/img/pnl-light.png" data-light="assets/img/pnl-light.png" data-dark="assets/img/pnl-dark.png" data-cap="scr.cap.pnl">
+            <span data-i18n="scr.tab.pnl">صافي الربح</span>
+            <small data-i18n="scr.tab.pnl_d" class="t-desc">بعد التكلفة والمصروفات</small>
+          </button>
+          <button class="thumb-btn" type="button" data-img="assets/img/purchases.png" data-light="assets/img/purchases.png" data-dark="assets/img/purchases.png" data-cap="scr.cap.purchases">
+            <span data-i18n="scr.tab.purchases">المشتريات</span>
+            <small data-i18n="scr.tab.purchases_d" class="t-desc">فواتير تشغيلات وموردين</small>
+          </button>
+        </div>
+      </div>
+      <div class="band-art">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com</span></div>
+          <img class="band-main-img" src="assets/img/pos-light.png" data-dark="assets/img/pos-dark.png" data-light="assets/img/pos-light.png" alt="Product showcase" width="1200" height="750" loading="lazy">
+        </div>
+        <p class="screens-cap" id="scrCap" data-i18n="scr.cap.pos">تشوف: كاشير بالباركود مع فصل التأمين. يهمك: سرعة البيع ودقة الحصة. النتيجة: فاتورة صح من أول مرة.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section security-sec" id="security">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="sec.eyebrow">بنية الثقة</span>
+      <h2 data-i18n="sec.title">بيانات صيدليتك وفلوسك — تحت سيطرتك</h2>
+      <p data-i18n="sec.sub">ثلاثة أعمدة لازم أي صاحب صيدلية يطمن عليها قبل ما ينقل شغله لنظام سحابي.</p>
+    </div>
+    <div class="trust-arch">
+      <div class="trust-pillar reveal">
+        <h3 data-i18n="sec.p1t">الأمان</h3>
+        <ul>
+          <li data-i18n="sec.p1a">عزل بيانات كل صيدلية (Tenant isolation)</li>
+          <li data-i18n="sec.p1b">نسخ احتياطي سحابي دوري</li>
+          <li data-i18n="sec.p1c">ملكية البيانات لك</li>
+          <li data-i18n="sec.p1d">إمكانية التصدير عند الحاجة</li>
+        </ul>
+      </div>
+      <div class="trust-pillar reveal">
+        <h3 data-i18n="sec.p2t">التحكم</h3>
+        <ul>
+          <li data-i18n="sec.p2a">أدوار مستخدمين (صاحب / صيدلي / كاشير / محاسب)</li>
+          <li data-i18n="sec.p2b">صلاحيات دقيقة على الشاشات والعمليات</li>
+          <li data-i18n="sec.p2c">سجل تدقيق للحركات الحساسة</li>
+          <li data-i18n="sec.p2d">تتبع مين غيّر إيه ومتى</li>
+        </ul>
+      </div>
+      <div class="trust-pillar reveal">
+        <h3 data-i18n="sec.p3t">الموثوقية المالية</h3>
+        <ul>
+          <li data-i18n="sec.p3a">حساب ربح بعد التكلفة الفعلية</li>
+          <li data-i18n="sec.p3b">سجل معاملات واضح</li>
+          <li data-i18n="sec.p3c">اعتماد/رفض للمصروفات</li>
+          <li data-i18n="sec.p3d">ورديات وعُهدة درج قابلة للمراجعة</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="steps.eyebrow">مسار التحويل</span>
+      <h2 data-i18n="steps.title">ثلاث خطوات واضحة — من الديمو للشغل</h2>
+      <p data-i18n="steps.lead">مفيش اشتراك ذاتي مضلل. بنبدأ بديمو، بعدين إعداد، بعدين شغل فعلي مع دعم.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><h3 data-i18n="steps.s1t">١) احجز ديمو ١٥ دقيقة</h3><p data-i18n="steps.s1d">نوريك بيعة بتأمين، صرف FEFO، وقفل وردية على سيناريو يشبه صيدليتك.</p></div>
+      <div class="step reveal"><h3 data-i18n="steps.s2t">٢) نجهّز صيدليتك ونساعد في النقل</h3><p data-i18n="steps.s2d">حساب باسمك، مستخدمين بصلاحيات، ومساعدة في إدخال الأصناف والأرصدة وتدريب الفريق.</p></div>
+      <div class="step reveal"><h3 data-i18n="steps.s3t">٣) افتح وردية وابدأ الإدارة</h3><p data-i18n="steps.s3d">من أول فاتورة: المخزون، التأمين، والأرباح تحت عينك — مع دعم مستمر.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section trust-built">
+  <div class="container">
+    <div class="trust-panel reveal">
+      <div class="trust-panel-copy">
+        <span class="eyebrow" data-i18n="trust.eyebrow">مصمم للسوق المصري</span>
+        <h2 data-i18n="trust.title">اتبنى على شغل الصيدلية المصرية — مش ترجمة لنظام أجنبي</h2>
+        <p data-i18n="trust.sub">التأمين المحلي، الوحدات (قرص/شريط/علبة)، الورديات وعُهدة الدرج، وأعمار الديون — جزء من التصميم من اليوم الأول. مفيش أرقام عملاء وهمية هنا: بنبني الثقة بالوضوح والدقة.</p>
+        <ul class="trust-list">
+          <li data-i18n="trust.li1">عربي أولاً — والإنجليزي بضغطة</li>
+          <li data-i18n="trust.li2">من المتصفح — من غير أجهزة خاصة</li>
+          <li data-i18n="trust.li3">إعداد + تدريب + دعم ضمن الاشتراك</li>
+        </ul>
+      </div>
+      <div class="trust-panel-side">
+        <blockquote data-i18n="trust.quote">«بنبني النظام حوالين المشاكل اللي الصيدلي بيعيشها يومياً: التأمين المعلّق، الصلاحية، والفرق بين المبيعات والربح.»</blockquote>
+        <cite data-i18n="trust.cite">— فريق منتج Pharmora · AG Technologies</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="pr.eyebrow">الأسعار</span>
+      <h2 data-i18n="pr.title">تسعير واضح — وسعر التأسيس مقفول ١٢ شهراً</h2>
+      <p data-i18n="pr.sub">Founding customer pricing locked for 12 months. من غير أجهزة خاصة ولا رسوم مخفية. اختَر الخطة حسب حجم شغلك، واحجز ديمو للتأكيد.</p>
+    </div>
+    <div class="plans">
+      <div class="plan reveal">
+        <p class="plan-for" data-i18n="pr.p1for">لصيدلية واحدة بدون تأمين معقّد</p>
+        <h3 data-i18n="pr.p1">الأساسية</h3>
+        <div class="price"><b>499</b> <span data-i18n="pr.mo">ج.م / شهرياً</span></div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p1f1">نقطة بيع + مخزون بالتشغيلات والصلاحية</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p1f2">مستخدمين اتنين + صلاحيات</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p1f3">تقارير المبيعات اليومية</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p1f4">إعداد أساسي وتدريب مختصر</span></li>
+          <li class="dim"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M18 6 6 18M6 6l12 12"/></svg> <span data-i18n="pr.p1f5">بدون وحدة التأمين الكاملة</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="demo.html" data-i18n="pr.c1">احجز ديمو — الأساسية</a>
+      </div>
+      <div class="plan hot reveal">
+        <div class="flag"><span data-i18n="pr.hot">الأنسب لمعظم الصيدليات</span></div>
+        <p class="plan-for" data-i18n="pr.p2for">لصيدليات التأمين والورديات والتقارير المالية</p>
+        <h3 data-i18n="pr.p2">الاحترافية</h3>
+        <div class="price"><b>899</b> <span data-i18n="pr.mo">ج.م / شهرياً</span></div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p2f1">كل مميزات الأساسية</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p2f2">التأمين والمطالبات كاملة</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p2f3">شيفتات وعُهدة درج</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p2f4">أرباح + أعمار ديون + سجل تدقيق</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p2f5">مستخدمين غير محدودين</span></li>
+        </ul>
+        <a class="btn btn-primary" href="demo.html" data-i18n="pr.c2">احجز ديمو — الاحترافية</a>
+      </div>
+      <div class="plan reveal">
+        <p class="plan-for" data-i18n="pr.p3for">لسلاسل وفروع متعددة</p>
+        <h3 data-i18n="pr.p3">الفروع</h3>
+        <div class="price"><b data-i18n="pr.contact">عرض مخصص</b></div>
+        <ul>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p3f1">كل مميزات الاحترافية</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p3f2">أكتر من فرع بحساب واحد</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p3f3">إعداد وتدريب خاص</span></li>
+          <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg> <span data-i18n="pr.p3f4">دعم بأولوية</span></li>
+        </ul>
+        <a class="btn btn-ghost" href="demo.html" data-i18n="pr.c3">احجز ديمو — الفروع</a>
+      </div>
+    </div>
+    <div class="plans-extras reveal">
+      <p class="founding-badge" data-i18n="pr.note">سعر التأسيس مقفول لمدة ١٢ شهراً لعملاء التأسيس — يُؤكَّد أثناء الديمو.</p>
+      <ul class="include-list">
+        <li data-i18n="pr.inc1">يشمل: إعداد الحساب · مساعدة النقل · تدريب الفريق · تحديثات الاشتراك</li>
+        <li data-i18n="pr.inc2">الدعم: واتساب + البريد الرسمي support@pharmora.com</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head reveal center">
+      <span class="eyebrow" data-i18n="faq.eyebrow">أسئلة قبل الديمو</span>
+      <h2 data-i18n="faq.title">إجابات مباشرة — من غير مبالغة</h2>
+    </div>
+    <div class="faq reveal">
+      <details><summary data-i18n="faq.q1"></summary><p data-i18n="faq.a1"></p></details>
+      <details><summary data-i18n="faq.q2"></summary><p data-i18n="faq.a2"></p></details>
+      <details><summary data-i18n="faq.q3"></summary><p data-i18n="faq.a3"></p></details>
+      <details><summary data-i18n="faq.q4"></summary><p data-i18n="faq.a4"></p></details>
+      <details><summary data-i18n="faq.q5"></summary><p data-i18n="faq.a5"></p></details>
+      <details><summary data-i18n="faq.q6"></summary><p data-i18n="faq.a6"></p></details>
+      <details><summary data-i18n="faq.q7"></summary><p data-i18n="faq.a7"></p></details>
+      <details><summary data-i18n="faq.q8"></summary><p data-i18n="faq.a8"></p></details>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="demo">
+  <div class="container">
+    <div class="cta-band reveal">
+      <span class="cta-kicker" data-i18n="cta.kicker">الخطوة الجاية</span>
+      <h2 data-i18n="cta.title">احجز ديمو مجاني ١٥ دقيقة على سيناريو صيدليتك</h2>
+      <p data-i18n="cta.sub">هنوريك: بيعة بتأمين · صرف FEFO · قفل وردية · تقرير أرباح. من غير التزام.</p>
+      <div class="btns">
+        <a class="btn btn-primary" href="demo.html" data-i18n="cta.demo">احجز ديمو مجاني</a>
+        <a class="btn btn-wa" data-wa href="#" target="_blank" rel="noopener"><span data-i18n="cta.wa">واتساب — رد سريع</span></a>
+      </div>
+      <ol class="cta-steps">
+        <li data-i18n="cta.s1">احجز الديمو</li>
+        <li data-i18n="cta.s2">نجهّز حسابك</li>
+        <li data-i18n="cta.s3">ابدأ إدارة المبيعات</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<footer class="footer footer-pro" id="site-footer"></footer>
+
+<a class="wa-float" data-wa href="#" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5.1-1.3A10 10 0 1 0 12 2Zm5.4 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.4-.7-2.9-1.1-4.7-4-4.9-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.3 1.8 2.1 1.2 1.1 2.2 1.4 2.5 1.5.3.1.5.1.7-.1l.9-1c.2-.3.4-.2.7-.1l2 .9c.3.2.5.2.5.4 0 .1 0 .7-.2 1.3Z"/></svg>
+</a>
+
+<div class="lightbox" id="lightbox"><img src="" alt=""></div>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
