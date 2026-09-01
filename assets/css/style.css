@@ -210,6 +210,7 @@ html[lang="en"] .nav-mobile a[data-i18n="nav.demo"]{display:none}
   radial-gradient(700px 380px at 5% 110%,rgba(30,58,95,.10),transparent 60%)}
 .hero-grid{display:grid;grid-template-columns:1fr 1.08fr;gap:var(--space-4);align-items:center}
 .hero-copy{max-width:540px;display:flex;flex-direction:column;gap:0}
+.hero-copy > .eyebrow{align-self:flex-start}
 .hero h1{font-size:clamp(1.85rem,4.2vw,2.75rem);font-weight:700;margin:var(--head-gap) 0 var(--space-2);letter-spacing:var(--tracking-tight);line-height:var(--leading-tight);max-width:540px}
 html[lang="en"] .hero h1{max-width:640px}
 .hero h1 em{font-style:normal;color:var(--teal-700);position:relative}
