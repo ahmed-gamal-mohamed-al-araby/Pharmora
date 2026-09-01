@@ -18,20 +18,20 @@ const I18N = {
     'nav.product': 'المنتج',
     'nav.security': 'الثقة',
     'nav.securityPage': 'الأمان والثقة',
-    'nav.demo': 'شرح النظام',
+    'nav.demo': 'احجز عرض توضيحي',
     'nav.privacy': 'الخصوصية',
     'nav.terms': 'الشروط',
     'nav.pricing': 'الأسعار',
     'nav.faq': 'الأسئلة الشائعة',
-    'nav.cta': 'اطلب شرح النظام',
+    'nav.cta': 'احجز عرض توضيحي',
     'nav.lang': 'EN',
 
     'hero.eyebrow': 'نظام إدارة صيدليات',
     'hero.title': 'بيع أسرع، مخزون أوضح، تأمين محسوب، وربح حقيقي "كله قدامك".',
     'hero.sub': 'برنامج إدارة صيدلية: بيع بالباركود، متابعة المخزون والصلاحية، شغل التأمين، صلاحيات للموظفين، وتقارير ربح — من أي جهاز. بيانات صيدليتك لوحدها.',
-    'hero.cta': 'اطلب شرح النظام',
+    'hero.cta': 'احجز عرض توضيحي',
     'hero.wa': 'اسأل على واتساب',
-    'hero.ctaNote': 'الخطوة الجاية: شرح النظام على شغلك — من غير التزام.',
+    'hero.ctaNote': 'الخطوة الجاية: عرض توضيحي على شغلك — من غير التزام.',
     'hero.t1': 'من أي جهاز — كمبيوتر أو تابلت',
     'hero.t2': 'بيانات صيدليتك لوحدها + صلاحيات للموظفين',
     'hero.t3': 'تقدر تاخد نسخة من بياناتك',
@@ -49,7 +49,7 @@ const I18N = {
     'out.title': 'مبيعات أوضح - مخزون تحت السيطرة - يومية أدق.',
     'out.sub': 'كل قسم تحت يشرح مشكلة بتقابلها في الشغل، إزاي النظام بيحلها، وإيه اللي يتحسن في الربحية والهدر.',
     'out.ctaLead': 'جاهز تشوف إزاي ده يشتغل على شغلك؟',
-    'out.ctaPrimary': 'اطلب شرح النظام',
+    'out.ctaPrimary': 'احجز عرض توضيحي',
     'out.ctaSecondary': 'قارن النسخ والأسعار',
 
     'out.ins.label': '١ — مطالبات التأمين',
@@ -128,9 +128,9 @@ const I18N = {
     'sec.p3d': 'ورديات وعُهدة الدرج قابلة للمراجعة',
 
     'steps.eyebrow': 'كيف تبدأ',
-    'steps.title': 'ثلاث خطوات واضحة — من شرح النظام للتشغيل الفعلي',
-    'steps.lead': 'مفيش تشغيل لوحدك. شرح النظام → إعداد مع الفريق → بيع فعلي.',
-    'steps.s1t': '١) اطلب شرح النظام',
+    'steps.title': 'ثلاث خطوات واضحة — من العرض التوضيحي للتشغيل الفعلي',
+    'steps.lead': 'مفيش تشغيل لوحدك. عرض توضيحي → إعداد مع الفريق → بيع فعلي.',
+    'steps.s1t': '١) احجز عرض توضيحي',
     'steps.s1d': 'نعرض بيعة بتأمين، صرف بالصلاحية، وتقفيل وردية على شغل يشبه صيدليتك.',
     'steps.s2t': '٢) نجهّز حسابك ونساعد في النقل',
     'steps.s2d': 'حساب باسمك، موظفين بصلاحيات، إدخال أصناف وأرصدة، وتدريب عملي للفريق.',
@@ -149,7 +149,7 @@ const I18N = {
 
     'pr.eyebrow': 'الأسعار',
     'pr.title': 'ثلاث نسخ — اختَر اللي يناسب حجم صيدليتك',
-    'pr.sub': '٨٠٠ و ١٥٠٠ ج.م شهرياً لصيدلية واحدة — من غير أجهزة خاصة أو رسوم مخفية. محتار؟ اطلب شرح النظام ونساعدك تختار.',
+    'pr.sub': '٨٠٠ و ١٥٠٠ ج.م شهرياً لصيدلية واحدة — من غير أجهزة خاصة أو رسوم مخفية. محتار؟ احجز عرض توضيحي ونساعدك تختار.',
     'pr.p1': 'النسخة الأساسية',
     'pr.p2': 'النسخة الاحترافية',
     'pr.p3': 'إدارة الفروع',
@@ -179,10 +179,10 @@ const I18N = {
     'pr.p3f2': 'أكتر من فرع بحساب واحد',
     'pr.p3f3': 'إعداد وتدريب خاص',
     'pr.p3f4': 'دعم بأولوية',
-    'pr.c1': 'اطلب شرح النظام — النسخة الأساسية',
-    'pr.c2': 'اطلب شرح النظام — النسخة الاحترافية',
-    'pr.c3': 'اطلب شرح النظام — إدارة الفروع',
-    'pr.compare': 'محتار بين النسخة الأساسية والاحترافية؟ اطلب شرح النظام — نراجع معاك شغلك ونوصي بالأنسب.',
+    'pr.c1': 'احجز عرض توضيحي — النسخة الأساسية',
+    'pr.c2': 'احجز عرض توضيحي — النسخة الاحترافية',
+    'pr.c3': 'احجز عرض توضيحي — إدارة الفروع',
+    'pr.compare': 'محتار بين النسخة الأساسية والاحترافية؟ احجز عرض توضيحي — نراجع معاك شغلك ونوصي بالأنسب.',
     'pr.inc1': 'كل نسخة تشمل: إعداد الحساب · مساعدة نقل البيانات · تدريب الفريق · تحديثات وتحسينات النظام',
     'pr.inc2': 'الدعم: واتساب + support@pharmora.com · hello@pharmora.com',
 
@@ -228,10 +228,10 @@ const I18N = {
     'fq.a15': 'نوضح لك خيارات إدارة الفروع حسب عدد الفروع وطريقة تشغيلك.',
     'fq.q16': 'هل يوجد إيصال إلكتروني؟',
     'fq.a16': 'الإيصال الإلكتروني سيتم دعمه ضمن التحديثات القادمة.',
-    'fq.q17': 'كيف أطلب شرح النظام؟',
-    'fq.a17': 'من صفحة شرح النظام أو التواصل — سيب بياناتك أو راسلنا على واتساب، ونرتب معاك الشرح على شغلك.',
+    'fq.q17': 'كيف أحجز عرضًا توضيحيًا؟',
+    'fq.a17': 'من صفحة العرض التوضيحي أو التواصل — سيب بياناتك أو راسلنا على واتساب، ونرتب معاك العرض على شغلك.',
     'fq.ctaT': 'محتاج توضيح أكتر؟',
-    'fq.ctaS': 'اطلب شرح النظام على شغل صيدليتك — من غير التزام.',
+    'fq.ctaS': 'احجز عرض توضيحي على شغل صيدليتك — من غير التزام.',
 
     'sales.eyebrow': 'قبل ما تشتري',
     'sales.title': 'إيه اللي محتاج تعرفه؟',
@@ -253,13 +253,13 @@ const I18N = {
     'sales.dataD': 'بيانات صيدليتك لوحدها — مع نسخة احتياطية تلقائية، وتقدر تاخد نسخة من بياناتك.',
 
     'cta.kicker': 'الخطوة التالية',
-    'cta.title': 'اطلب شرح النظام — على شغل صيدليتك',
+    'cta.title': 'احجز عرض توضيحي — على شغل صيدليتك',
     'cta.sub': 'نعرض: بيعة بتأمين · صرف بالصلاحية · تقفيل وردية · تقرير أرباح. بدون التزام أو بطاقة ائتمان.',
-    'cta.demo': 'اطلب شرح النظام',
+    'cta.demo': 'احجز عرض توضيحي',
     'cta.sec': 'اطّلع على الأمان',
     'cta.wa': 'واتساب — رد سريع',
-    'cta.micro': 'بعد الطلب: نؤكّد الموعد · نجهّز شرح النظام على شغلك · من غير بطاقة ائتمان',
-    'cta.s1': 'اطلب شرح النظام',
+    'cta.micro': 'بعد الحجز: نؤكّد الموعد · نجهّز العرض التوضيحي على شغلك · من غير بطاقة ائتمان',
+    'cta.s1': 'احجز عرض توضيحي',
     'cta.s2': 'نجهّز حسابك',
     'cta.s3': 'ابدأ إدارة المبيعات',
     'cta.contact': 'صفحة التواصل',
@@ -268,7 +268,7 @@ const I18N = {
     'ft.product': 'المنتج',
     'ft.company': 'الشركة',
     'ft.contact': 'تواصل رسمي',
-    'ft.demo': 'شرح النظام',
+    'ft.demo': 'احجز عرض توضيحي',
     'ft.wa': 'واتساب',
     'ft.rights': 'جميع الحقوق محفوظة',
 
@@ -395,14 +395,14 @@ const I18N = {
     'st.q6': 'عندكم شهادات أمان دولية؟',
     'st.a6': 'من غير شهادات وهمية. بنوضح اللي فعلاً موجود: بيانات صيدليتك لوحدها، صلاحيات، تسجيل مين عمل إيه، نسخة احتياطية، وتقدر تاخد نسخة من بياناتك.',
     'st.ctaT': 'عايز تشوف الضوابط دي على شغلك؟',
-    'st.ctaS': 'في شرح النظام بنوريك الصلاحيات، مسار البيعة والتأمين، وكيف التقارير بتعكس الربح الحقيقي.',
+    'st.ctaS': 'في العرض التوضيحي بنوريك الصلاحيات، مسار البيعة والتأمين، وكيف التقارير بتعكس الربح الحقيقي.',
 
     'pd.eyebrow': 'نظام إدارة صيدليات',
     'pd.title': 'نظام واحد لبيع، مخزون، تأمين، وتقارير صيدليتك',
     'pd.sub': 'Pharmora يساعدك تبيع أسرع، تتابع المخزون والصلاحية، تدير التأمين، وتعرف الربح — من مكان واحد.',
     'pd.value': 'من نقطة البيع لحد تقرير الربح — بدون إكسيل ولا برامج متفرقة.',
     'pd.pill1': 'نقطة بيع', 'pd.pill2': 'مخزون', 'pd.pill3': 'تأمين', 'pd.pill4': 'تقارير', 'pd.pill5': 'صلاحيات',
-    'pd.cta': 'اطلب شرح النظام',
+    'pd.cta': 'احجز عرض توضيحي',
     'pd.ctaSee': 'شوف الشاشات',
     'pd.ctaSec': 'الأمان والثقة',
     'pd.pos.label': '١ — نقطة البيع والمبيعات',
@@ -470,12 +470,12 @@ const I18N = {
     'pd.br.l4': 'إعداد وتدريب على مقاس السلسلة',
     'pd.br.result': 'النتيجة: صورة موحّدة للشغل من غير ما تفقد التحكم.',
     'pd.endT': 'عايز تشوف ده على شغل صيدليتك؟',
-    'pd.endS': 'اطلب شرح النظام — بيعة، مخزون، تأمين، وتقرير ربح. من غير التزام.',
+    'pd.endS': 'احجز عرض توضيحي — بيعة، مخزون، تأمين، وتقرير ربح. من غير التزام.',
 
-    'dm.eyebrow': 'شرح النظام',
+    'dm.eyebrow': 'عرض توضيحي',
     'dm.title': 'شوف النظام على شغل صيدليتك',
     'dm.sub': 'نعرض البيع، المخزون، التأمين، والتقارير على شغل يشبه صيدليتك. من غير التزام ولا بطاقة ائتمان.',
-    'dm.flowT': 'إيه اللي هتشوفه في شرح النظام؟',
+    'dm.flowT': 'إيه اللي هتشوفه في العرض التوضيحي؟',
     'dm.flowS': 'جولة على البيع والمخزون والتأمين — مش فيديو مسجّل. نشوف شغل قريب من صيدليتك.',
     'dm.step1t': '١) طريقة البيع',
     'dm.step1d': 'بيعة بالباركود، وحدات، وتأمين — نشوف ازاي الفاتورة بتطلع صح من أول مرة.',
@@ -483,14 +483,14 @@ const I18N = {
     'dm.step2d': 'تشغيلات، الأقرب انتهاءً يتصرف أولاً، وتنبيهات قبل الانتهاء — ازاي تقلل الهدر.',
     'dm.step3t': '٣) التقارير والصلاحيات',
     'dm.step3d': 'ربح حقيقي، وردية، ومين يقدر يعمل إيه في النظام.',
-    'dm.trustNote': 'شرح النظام على شغلك — مش عرض عام. من غير وعود أو أرقام وهمية.',
-    'dm.formEy': 'اطلب موعد الشرح',
-    'dm.formT': 'اطلب شرح النظام',
-    'dm.formS': 'املأ البيانات وابعت على واتساب. هنؤكّد الموعد ونجهّز شرح النظام على شغلك.',
+    'dm.trustNote': 'عرض توضيحي على شغلك — مش عرض عام. من غير وعود أو أرقام وهمية.',
+    'dm.formEy': 'احجز عرض توضيحي',
+    'dm.formT': 'احجز عرض توضيحي',
+    'dm.formS': 'املأ البيانات وابعت على واتساب. هنؤكّد الموعد ونجهّز عرضًا توضيحيًا على شغلك.',
     'dm.b1': 'عربي أو إنجليزي — حسب راحتك',
     'dm.b2': 'مناسب لصيدلية واحدة أو فروع',
-    'dm.b3': 'بعد شرح النظام: فريق Pharmora يجهّز النظام ويدرب الموظفين',
-    'dm.formH': 'بيانات طلب الشرح',
+    'dm.b3': 'بعد العرض التوضيحي: فريق Pharmora يجهّز النظام ويدرب الموظفين',
+    'dm.formH': 'بيانات حجز العرض التوضيحي',
     'dm.fName': 'الاسم',
     'dm.fNameP': 'د/ أحمد',
     'dm.fPharm': 'اسم الصيدلية',
@@ -502,7 +502,7 @@ const I18N = {
     'dm.fPhone': 'موبايل / واتساب',
     'dm.fTime': 'الوقت المفضّل',
     'dm.fTimeP': 'مثال: الخميس بعد الظهر',
-    'dm.send': 'اطلب شرح النظام',
+    'dm.send': 'احجز عرض توضيحي',
     'dm.waLine': 'أو راسلنا على واتساب:',
     'dm.note': 'الطلب بيفتح واتساب برسالة جاهزة — الصفحة مش بتخزن بيانات على سيرفر.',
 
@@ -510,7 +510,7 @@ const I18N = {
     'pv.title': 'سياسة الخصوصية',
     'pv.sub': 'آخر تحديث توضيحي للإطلاق. بنوصف ممارساتنا بوضوح — من غير شهادات أو ادعاءات غير معلنة.',
     'pv.s1t': '١) جمع البيانات',
-    'pv.s1d': 'نجمع البيانات اللازمة لتقديم الخدمة والتواصل معك: معلومات التواصل عند طلب شرح النظام أو الاشتراك، وبيانات تشغيل الصيدلية داخل حسابك عند استخدام النظام.',
+    'pv.s1d': 'نجمع البيانات اللازمة لتقديم الخدمة والتواصل معك: معلومات التواصل عند حجز عرض توضيحي أو الاشتراك، وبيانات تشغيل الصيدلية داخل حسابك عند استخدام النظام.',
     'pv.s2t': '٢) معلومات الحساب',
     'pv.s2d': 'تشمل اسم المستخدم، الدور، وبيانات الدخول المرتبطة بحساب الصيدلية. أنت مسؤول عن الحفاظ على سرية بيانات الدخول لمستخدميك.',
     'pv.s3t': '٣) بيانات الصيدلية',
@@ -526,7 +526,7 @@ const I18N = {
 
     'tm.eyebrow': 'قانوني',
     'tm.title': 'شروط الاستخدام والاشتراك',
-    'tm.sub': 'باستخدامك Pharmora فأنت توافق على الشروط التالية. التفاصيل التجارية النهائية تتأكد عند التعاقد/شرح النظام.',
+    'tm.sub': 'باستخدامك Pharmora فأنت توافق على الشروط التالية. التفاصيل التجارية النهائية تتأكد عند التعاقد/العرض التوضيحي.',
     'tm.s1t': '١) شروط الاشتراك',
     'tm.s1d': 'Pharmora نظام إدارة صيدليات باشتراك شهري حسب الخطة المختارة. نوضح لك الخطة المناسبة وتفاصيل الاشتراك قبل البدء.',
     'tm.s2t': '٢) مسؤولية الحساب',
@@ -542,27 +542,27 @@ const I18N = {
 
     'ft.legal': 'قانوني',
     'ct.eyebrow': 'تواصل',
-    'ct.title': 'اطلب شرح النظام — أو اسأل فريق Pharmora',
-    'ct.sub': 'الخطوة الأوضح: شرح النظام على شغلك. للرد السريع: واتساب أو الهاتف أو البريد الرسمي.',
+    'ct.title': 'احجز عرض توضيحي — أو اسأل فريق Pharmora',
+    'ct.sub': 'الخطوة الأوضح: عرض توضيحي على شغلك. للرد السريع: واتساب أو الهاتف أو البريد الرسمي.',
     'ct.waT': 'واتساب — رد سريع',
     'ct.phT': 'اتصال مباشر',
     'ct.emT': 'البريد الرسمي',
-    'ct.formT': 'اطلب شرح النظام — سيب بياناتك',
+    'ct.formT': 'احجز عرض توضيحي — سيب بياناتك',
     'ct.fName': 'اسمك',
     'ct.fNameP': 'د/ أحمد محمد',
     'ct.fPharm': 'اسم الصيدلية',
     'ct.fPharmP': 'صيدلية النور',
     'ct.fPhone': 'رقم الموبايل',
     'ct.fPlan': 'الخطة',
-    'ct.plan0': 'لسه بقرر — عايز شرح النظام أولاً',
+    'ct.plan0': 'لسه بقرر — عايز عرض توضيحي أولاً',
     'ct.planBasic': 'النسخة الأساسية — 800 ج.م / شهرياً',
     'ct.planPro': 'النسخة الاحترافية — 1500 ج.م / شهرياً',
     'ct.planBranches': 'إدارة الفروع — سلسلة',
     'ct.fMsg': 'موعد أو ملاحظة',
     'ct.fMsgP': 'مثال: الخميس بعد الظهر',
-    'ct.send': 'ابعت طلب شرح النظام على واتساب',
+    'ct.send': 'احجز عرض توضيحي',
     'ct.note': 'الزر بيفتح واتساب برسالة جاهزة — الصفحة مش بتخزن بيانات على سيرفر.',
-    'ct.waMsg': 'مرحباً، عايز أطلب شرح نظام Pharmora',
+    'ct.waMsg': 'مرحباً، عايز أحجز عرض توضيحي لنظام Pharmora',
   },
   en: {
     dir: 'ltr',
@@ -574,20 +574,20 @@ const I18N = {
     'nav.product': 'Product',
     'nav.security': 'Trust',
     'nav.securityPage': 'Security',
-    'nav.demo': 'Walkthrough',
+    'nav.demo': 'Book a Demo',
     'nav.privacy': 'Privacy',
     'nav.terms': 'Terms',
     'nav.pricing': 'Pricing',
     'nav.faq': 'FAQ',
-    'nav.cta': 'Request a walkthrough',
+    'nav.cta': 'Book a Demo',
     'nav.lang': 'ع',
 
     'hero.eyebrow': 'Pharmacy management system',
     'hero.title': "Faster sales, clearer inventory, calculated insurance, and real profit — all right in front of you.",
     'hero.sub': 'Pharmora pharmacy management software: barcode sales, inventory and expiry tracking, insurance, staff permissions, and profit reports — on any device. Your pharmacy data stays separate.',
-    'hero.cta': 'Request a system walkthrough',
+    'hero.cta': 'Book a Demo',
     'hero.wa': 'Ask on WhatsApp',
-    'hero.ctaNote': 'Next step: a system walkthrough on your pharmacy operations — no commitment.',
+    'hero.ctaNote': 'Next step: a demo tailored to your pharmacy operations — no commitment.',
     'hero.t1': 'Any device — computer or tablet',
     'hero.t2': 'Separate pharmacy data + roles',
     'hero.t3': 'You can export your data',
@@ -605,7 +605,7 @@ const I18N = {
     'out.title': 'Clearer sales - controlled stock - better daily work.',
     'out.sub': 'Each section below covers a problem you face at work, how the system handles it, and what improves in profit and waste.',
     'out.ctaLead': 'Ready to see how this works for your pharmacy?',
-    'out.ctaPrimary': 'Request a system walkthrough',
+    'out.ctaPrimary': 'Book a Demo',
     'out.ctaSecondary': 'Compare plans & pricing',
 
     'out.ins.label': '1 — Insurance claims',
@@ -684,9 +684,9 @@ const I18N = {
     'sec.p3d': 'Reviewable shifts and drawer counts',
 
     'steps.eyebrow': 'How to get started',
-    'steps.title': 'Three clear steps — from walkthrough to live operations',
-    'steps.lead': 'No running it alone. Walkthrough → setup with our team → live selling with ongoing support.',
-    'steps.s1t': '1) Request a system walkthrough',
+    'steps.title': 'Three clear steps — from demo to live operations',
+    'steps.lead': 'No running it alone. Demo → setup with our team → live selling with ongoing support.',
+    'steps.s1t': '1) Book a Demo',
     'steps.s1d': 'We show an insured sale, expiry dispense, and a shift close on operations like yours.',
     'steps.s2t': '2) We set up your account and help migrate',
     'steps.s2d': 'Account in your name, staff with roles, help entering items and balances, and hands-on team training.',
@@ -705,7 +705,7 @@ const I18N = {
 
     'pr.eyebrow': 'Pricing',
     'pr.title': 'Three editions — pick what fits your pharmacy size',
-    'pr.sub': 'EGP 800 and 1,500 per month for one pharmacy. No special hardware or hidden fees. Unsure? Request a walkthrough and we will help you choose.',
+    'pr.sub': 'EGP 800 and 1,500 per month for one pharmacy. No special hardware or hidden fees. Unsure? Book a Demo and we will help you choose.',
     'pr.p1': 'Basic Edition',
     'pr.p2': 'Professional Edition',
     'pr.p3': 'Multi-branch Management',
@@ -734,10 +734,10 @@ const I18N = {
     'pr.p3f2': 'Multiple branches, one account',
     'pr.p3f3': 'Dedicated setup & training',
     'pr.p3f4': 'Priority support',
-    'pr.c1': 'Request walkthrough — Basic Edition',
-    'pr.c2': 'Request walkthrough — Professional Edition',
-    'pr.c3': 'Request walkthrough — Multi-branch',
-    'pr.compare': 'Unsure between Basic and Professional Edition? Request a walkthrough — we review your operation and recommend the right fit.',
+    'pr.c1': 'Book a Demo — Basic Edition',
+    'pr.c2': 'Book a Demo — Professional Edition',
+    'pr.c3': 'Book a Demo — Multi-branch',
+    'pr.compare': 'Unsure between Basic and Professional Edition? Book a Demo — we review your operation and recommend the right fit.',
     'pr.inc1': 'Every edition includes: account setup · data migration help · team training · system updates and improvements',
     'pr.inc2': 'Support: WhatsApp + support@pharmora.com · hello@pharmora.com',
 
@@ -783,10 +783,10 @@ const I18N = {
     'fq.a15': 'We explain branch management options based on how many branches you have and how you operate.',
     'fq.q16': 'Is there an e-receipt?',
     'fq.a16': 'Electronic receipts will be supported in upcoming updates.',
-    'fq.q17': 'How do I request a system walkthrough?',
-    'fq.a17': 'From the walkthrough or contact page — leave your details or message us on WhatsApp, and we arrange a walkthrough on your operations.',
+    'fq.q17': 'How do I book a demo?',
+    'fq.a17': 'From the demo or contact page — leave your details or message us on WhatsApp, and we arrange a demo tailored to your operations.',
     'fq.ctaT': 'Need more detail?',
-    'fq.ctaS': 'Request a system walkthrough on your pharmacy operations — no commitment.',
+    'fq.ctaS': 'Book a Demo tailored to your pharmacy operations — no commitment.',
 
     'sales.eyebrow': 'Before you buy',
     'sales.title': 'What you should know',
@@ -804,13 +804,13 @@ const I18N = {
     'sales.dataD': 'Your pharmacy data is yours — separate from others, with automatic backups and export.',
 
     'cta.kicker': 'Next step',
-    'cta.title': 'Request a system walkthrough — on your pharmacy operations',
+    'cta.title': 'Book a Demo — tailored to your pharmacy operations',
     'cta.sub': 'We show: insured sale · expiry dispense · shift close · profit report. No commitment or credit card.',
-    'cta.demo': 'Request a system walkthrough',
+    'cta.demo': 'Book a Demo',
     'cta.sec': 'View security details',
     'cta.wa': 'WhatsApp — quick reply',
-    'cta.micro': 'After your request: we confirm the slot · prepare a walkthrough close to your operations · no credit card',
-    'cta.s1': 'Request a walkthrough',
+    'cta.micro': 'After booking: we confirm the slot · prepare a demo tailored to your operations · no credit card',
+    'cta.s1': 'Book a Demo',
     'cta.s2': 'We set up your account',
     'cta.s3': 'Start managing sales',
     'cta.contact': 'Contact page',
@@ -819,7 +819,7 @@ const I18N = {
     'ft.product': 'Product',
     'ft.company': 'Company',
     'ft.contact': 'Official contact',
-    'ft.demo': 'System walkthrough',
+    'ft.demo': 'Book a Demo',
     'ft.wa': 'WhatsApp',
     'ft.rights': 'All rights reserved',
 
@@ -946,14 +946,14 @@ const I18N = {
     'st.q6': 'Do you have international security certifications?',
     'st.a6': 'We do not claim undeclared certifications here. We describe real controls: separate data, permissions, change tracking, backups, and export.',
     'st.ctaT': 'Want to see these controls on your pharmacy operations?',
-    'st.ctaS': 'In the walkthrough we show permissions, the insured-sale path, and how reports reflect real profit.',
+    'st.ctaS': 'In the demo we show permissions, the insured-sale path, and how reports reflect real profit.',
 
     'pd.eyebrow': 'Pharmacy management system',
     'pd.title': 'One system for sales, inventory, insurance, and pharmacy reports',
     'pd.sub': 'Pharmora helps you run sales, stock, insurance, and profit from one place — each pharmacy with its own setup, permissions, and separate data.',
     'pd.value': 'From POS to profit reports — without Excel or scattered tools.',
     'pd.pill1': 'POS', 'pd.pill2': 'Inventory', 'pd.pill3': 'Insurance', 'pd.pill4': 'Reports', 'pd.pill5': 'Permissions',
-    'pd.cta': 'Request a system walkthrough',
+    'pd.cta': 'Book a Demo',
     'pd.ctaSee': 'See the screens',
     'pd.ctaSec': 'Security & Trust',
     'pd.pos.label': '1 — Point of sale',
@@ -1021,27 +1021,27 @@ const I18N = {
     'pd.br.l4': 'Setup and training for your chain',
     'pd.br.result': 'Result: one picture of the business without losing control.',
     'pd.endT': 'Want to see this on your pharmacy operations?',
-    'pd.endS': 'Request a system walkthrough — sale, stock, insurance, and profit report. No commitment.',
+    'pd.endS': 'Book a Demo — sale, stock, insurance, and profit report. No commitment.',
 
-    'dm.eyebrow': 'System walkthrough',
-    'dm.title': 'See the system on your pharmacy operations',
+    'dm.eyebrow': 'Product demo',
+    'dm.title': 'See Pharmora in a demo tailored to your pharmacy',
     'dm.sub': 'We show sales, inventory, insurance, and reports on work close to yours. No commitment or credit card.',
-    'dm.flowT': 'What will you see in the walkthrough?',
-    'dm.flowS': 'A walkthrough of sales, inventory, and insurance — not a recorded video. We show work close to yours.',
+    'dm.flowT': 'What will you see in the demo?',
+    'dm.flowS': 'A demo of sales, inventory, and insurance — not a recorded video. We show work close to yours.',
     'dm.step1t': '1) How selling works',
     'dm.step1d': 'A barcode sale with units and insurance — how the invoice comes out correct the first time.',
     'dm.step2t': '2) Inventory and expiry',
     'dm.step2d': 'Batches, nearest expiry first, and expiry alerts — how to cut waste.',
     'dm.step3t': '3) Reports and permissions',
     'dm.step3d': 'Real profit, shifts, and who can do what in the system.',
-    'dm.trustNote': 'The walkthrough is built around your questions — not a generic pitch. No fake promises or numbers.',
-    'dm.formEy': 'Request your walkthrough',
-    'dm.formT': 'Request a system walkthrough',
-    'dm.formS': 'Fill in the form and send via WhatsApp. We confirm the slot and prepare a walkthrough close to your operations.',
+    'dm.trustNote': 'The demo is built around your questions — not a generic pitch. No fake promises or numbers.',
+    'dm.formEy': 'Book a Demo',
+    'dm.formT': 'Book a Demo',
+    'dm.formS': 'Fill in the form and send via WhatsApp. We confirm the slot and prepare a demo tailored to your operations.',
     'dm.b1': 'Arabic or English — your choice',
     'dm.b2': 'For one pharmacy or multiple branches',
-    'dm.b3': 'After the walkthrough: setup and training with our team',
-    'dm.formH': 'Walkthrough request details',
+    'dm.b3': 'After the demo: setup and training with our team',
+    'dm.formH': 'Demo booking details',
     'dm.fName': 'Name',
     'dm.fNameP': 'Dr. Ahmed',
     'dm.fPharm': 'Pharmacy name',
@@ -1053,7 +1053,7 @@ const I18N = {
     'dm.fPhone': 'Mobile / WhatsApp',
     'dm.fTime': 'Preferred time',
     'dm.fTimeP': 'e.g. Thursday afternoon',
-    'dm.send': 'Request a system walkthrough',
+    'dm.send': 'Book a Demo',
     'dm.waLine': 'Or message us on WhatsApp:',
     'dm.note': 'Opens WhatsApp with a pre-filled message — nothing is stored on a server.',
 
@@ -1061,7 +1061,7 @@ const I18N = {
     'pv.title': 'Privacy Policy',
     'pv.sub': 'Launch-ready explanatory update. We describe our practices clearly — without undeclared certifications or claims.',
     'pv.s1t': '1) Data collection',
-    'pv.s1d': 'We collect data needed to deliver the service and contact you: contact details when you request a walkthrough or subscribe, and pharmacy operational data inside your account when you use the system.',
+    'pv.s1d': 'We collect data needed to deliver the service and contact you: contact details when you book a demo or subscribe, and pharmacy operational data inside your account when you use the system.',
     'pv.s2t': '2) Account information',
     'pv.s2d': 'Includes username, role, and login credentials tied to the pharmacy account. You are responsible for keeping your users’ credentials confidential.',
     'pv.s3t': '3) Pharmacy data handling',
@@ -1077,7 +1077,7 @@ const I18N = {
 
     'tm.eyebrow': 'Legal',
     'tm.title': 'Terms of Use & Subscription',
-    'tm.sub': 'By using Pharmora you agree to the following. Final commercial details are confirmed at contracting/walkthrough.',
+    'tm.sub': 'By using Pharmora you agree to the following. Final commercial details are confirmed during contracting or the demo.',
     'tm.s1t': '1) Subscription terms',
     'tm.s1d': 'Pharmora is billed monthly by plan. Website prices are confirmed at contracting.',
     'tm.s2t': '2) Account responsibility',
@@ -1093,27 +1093,27 @@ const I18N = {
 
     'ft.legal': 'Legal',
     'ct.eyebrow': 'Contact',
-    'ct.title': 'Request a system walkthrough — or talk to the Pharmora team',
-    'ct.sub': 'Clearest step: a system walkthrough on your operations. For a quick reply: WhatsApp, phone, or official email.',
+    'ct.title': 'Book a Demo — or talk to the Pharmora team',
+    'ct.sub': 'Clearest step: a demo tailored to your operations. For a quick reply: WhatsApp, phone, or official email.',
     'ct.waT': 'WhatsApp — quick reply',
     'ct.phT': 'Direct call',
     'ct.emT': 'Official email',
-    'ct.formT': 'Request a walkthrough — leave your details',
+    'ct.formT': 'Book a Demo — leave your details',
     'ct.fName': 'Your name',
     'ct.fNameP': 'Dr. Ahmed Mohamed',
     'ct.fPharm': 'Pharmacy name',
     'ct.fPharmP': 'Al-Nour Pharmacy',
     'ct.fPhone': 'Mobile number',
     'ct.fPlan': 'Plan',
-    'ct.plan0': 'Still deciding — walkthrough first',
+    'ct.plan0': 'Still deciding — demo first',
     'ct.planBasic': 'Basic Edition — EGP 800 / month',
     'ct.planPro': 'Professional Edition — EGP 1,500 / month',
     'ct.planBranches': 'Multi-branch Management — chain',
     'ct.fMsg': 'Preferred time or note',
     'ct.fMsgP': 'e.g. Thursday afternoon',
-    'ct.send': 'Send walkthrough request via WhatsApp',
+    'ct.send': 'Book a Demo',
     'ct.note': 'Opens WhatsApp with a pre-filled message — nothing is stored on a server.',
-    'ct.waMsg': 'Hello, I\'d like to request a Pharmora system walkthrough',
+    'ct.waMsg': 'Hello, I\'d like to book a Pharmora demo',
   }
 };
 
@@ -1188,7 +1188,7 @@ function mountSiteFooter() {
         <b data-i18n="ft.product">Product</b>
         <a href="product.html" data-i18n="nav.product">Product</a>
         <a href="index.html#pricing" data-i18n="nav.pricing">Pricing</a>
-        <a href="demo.html" data-i18n="nav.demo">Walkthrough</a>
+        <a href="demo.html" data-i18n="nav.demo">Book a Demo</a>
         <a href="faq.html" data-i18n="nav.faq">FAQ</a>
         <a href="security.html" data-i18n="nav.securityPage">Security</a>
       </div>
@@ -1196,7 +1196,7 @@ function mountSiteFooter() {
         <b data-i18n="ft.company">Company</b>
         <a href="about.html" data-i18n="nav.about">About</a>
         <a href="contact.html" data-i18n="nav.contact">Contact</a>
-        <a href="demo.html" data-i18n="ft.demo">System walkthrough</a>
+        <a href="demo.html" data-i18n="ft.demo">Book a Demo</a>
         <a data-wa href="#" target="_blank" rel="noopener"><span data-i18n="ft.wa">WhatsApp</span> · <span data-tel-label dir="ltr"></span></a>
       </div>
       <div class="footer-col">
@@ -1279,8 +1279,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone = document.getElementById('f-phone').value.trim();
       const extra = (document.getElementById('f-msg')?.value || '').trim();
       const lines = lang === 'ar'
-        ? ['مرحباً، عايز أطلب شرح نظام Pharmora:', '', 'الاسم: ' + name, 'الصيدلية: ' + pharmacy, 'رقم التواصل: ' + phone]
-        : ['Hello, I\'d like to request a Pharmora system walkthrough:', '', 'Name: ' + name, 'Pharmacy: ' + pharmacy, 'Phone: ' + phone];
+        ? ['مرحباً، عايز أحجز عرض توضيحي لنظام Pharmora:', '', 'الاسم: ' + name, 'الصيدلية: ' + pharmacy, 'رقم التواصل: ' + phone]
+        : ['Hello, I\'d like to book a Pharmora demo:', '', 'Name: ' + name, 'Pharmacy: ' + pharmacy, 'Phone: ' + phone];
       if (planSel && planSel.value) {
         lines.push((lang === 'ar' ? 'الخطة: ' : 'Plan: ') + planSel.selectedOptions[0].textContent.trim());
       }
@@ -1300,8 +1300,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const phone = document.getElementById('d-phone').value.trim();
       const time = (document.getElementById('d-time')?.value || '').trim();
       const lines = lang === 'ar'
-        ? ['مرحباً، عايز أطلب شرح نظام Pharmora:', '', 'الاسم: ' + name, 'الصيدلية: ' + pharmacy, 'عدد الفروع: ' + branches.selectedOptions[0].textContent.trim(), 'واتساب: ' + phone]
-        : ['Hello, I\'d like to request a Pharmora system walkthrough:', '', 'Name: ' + name, 'Pharmacy: ' + pharmacy, 'Branches: ' + branches.selectedOptions[0].textContent.trim(), 'WhatsApp: ' + phone];
+        ? ['مرحباً، عايز أحجز عرض توضيحي لنظام Pharmora:', '', 'الاسم: ' + name, 'الصيدلية: ' + pharmacy, 'عدد الفروع: ' + branches.selectedOptions[0].textContent.trim(), 'واتساب: ' + phone]
+        : ['Hello, I\'d like to book a Pharmora demo:', '', 'Name: ' + name, 'Pharmacy: ' + pharmacy, 'Branches: ' + branches.selectedOptions[0].textContent.trim(), 'WhatsApp: ' + phone];
       if (time) lines.push((lang === 'ar' ? 'الوقت المفضّل: ' : 'Preferred time: ') + time);
       window.open('https://wa.me/' + CONTACT.wa + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
     });
