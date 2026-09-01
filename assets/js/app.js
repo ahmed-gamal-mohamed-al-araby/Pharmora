@@ -38,6 +38,7 @@ const I18N = {
     'hero.t4': 'إعداد وتدريب مع التعاقد',
     'hero.caption': 'لقطات حقيقية من النظام',
 
+    'strip.title': 'أمان وسيطرة كاملة',
     'strip.s1': 'بيانات صيدليتك لوحدها',
     'strip.s2': 'أدوار وصلاحيات',
     'strip.s3': 'تسجيل مين عمل إيه',
@@ -45,7 +46,7 @@ const I18N = {
     'strip.s5': 'دعم فني وتحديثات مستمرة',
 
     'out.eyebrow': 'شغل الصيدلية',
-    'out.title': 'مبيعات أوضح · مخزون تحت السيطرة · يومية أدق',
+    'out.title': 'مبيعات أوضح ـ مخزون تحت السيطرة - يومية أدق.',
     'out.sub': 'كل قسم تحت يشرح مشكلة بتقابلها في الشغل، إزاي النظام بيحلها، وإيه اللي يتحسن في الربحية والهدر.',
     'out.ctaLead': 'جاهز تشوف إزاي ده يشتغل على شغلك؟',
     'out.ctaPrimary': 'اطلب شرح النظام',
@@ -593,6 +594,7 @@ const I18N = {
     'hero.t4': 'Setup & training included',
     'hero.caption': 'Real screenshots from the system',
 
+    'strip.title': 'Complete security & control',
     'strip.s1': 'Separate data per pharmacy',
     'strip.s2': 'Roles & permissions',
     'strip.s3': 'Track who changed what',
@@ -600,7 +602,7 @@ const I18N = {
     'strip.s5': 'Technical support & continuous updates',
 
     'out.eyebrow': 'Pharmacy operations',
-    'out.title': 'Clearer sales · controlled stock · better daily work',
+    'out.title': 'Clearer sales - controlled stock - better daily work.',
     'out.sub': 'Each section below covers a problem you face at work, how the system handles it, and what improves in profit and waste.',
     'out.ctaLead': 'Ready to see how this works for your pharmacy?',
     'out.ctaPrimary': 'Request a system walkthrough',
