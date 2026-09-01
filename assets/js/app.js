@@ -27,7 +27,7 @@ const I18N = {
     'nav.lang': 'EN',
 
     'hero.eyebrow': 'نظام إدارة صيدليات',
-    'hero.title': 'بيع أسرع، مخزون أوضح، تأمين محسوب، وربح حقيقي — من مكان واحد',
+    'hero.title': 'بيع أسرع، مخزون أوضح، تأمين محسوب، وربح حقيقي "كله قدامك".',
     'hero.sub': 'برنامج إدارة صيدلية: بيع بالباركود، متابعة المخزون والصلاحية، شغل التأمين، صلاحيات للموظفين، وتقارير ربح — من أي جهاز. بيانات صيدليتك لوحدها.',
     'hero.cta': 'اطلب شرح النظام',
     'hero.wa': 'اسأل على واتساب',
@@ -36,13 +36,13 @@ const I18N = {
     'hero.t2': 'بيانات صيدليتك لوحدها + صلاحيات للموظفين',
     'hero.t3': 'تقدر تاخد نسخة من بياناتك',
     'hero.t4': 'إعداد وتدريب مع التعاقد',
-    'hero.caption': 'لقطات حقيقية من النظام — مش تصميمات تسويقية',
+    'hero.caption': 'لقطات حقيقية من النظام',
 
     'strip.s1': 'بيانات صيدليتك لوحدها',
     'strip.s2': 'أدوار وصلاحيات',
     'strip.s3': 'تسجيل مين عمل إيه',
     'strip.s4': 'نسخة احتياطية تلقائية',
-    'strip.s5': 'تقدر تاخد نسخة من بياناتك',
+    'strip.s5': 'دعم فني وتحديثات مستمرة',
 
     'out.eyebrow': 'شغل الصيدلية',
     'out.title': 'مبيعات أوضح · مخزون تحت السيطرة · يومية أدق',
@@ -582,7 +582,7 @@ const I18N = {
     'nav.lang': 'ع',
 
     'hero.eyebrow': 'Pharmacy management system',
-    'hero.title': 'Sales, inventory, insurance, and real profit — one system for your pharmacy',
+    'hero.title': "Faster sales, clearer inventory, calculated insurance, and real profit — all right in front of you.",
     'hero.sub': 'Pharmora pharmacy management software: barcode sales, inventory and expiry tracking, insurance, staff permissions, and profit reports — on any device. Your pharmacy data stays separate.',
     'hero.cta': 'Request a system walkthrough',
     'hero.wa': 'Ask on WhatsApp',
@@ -597,7 +597,7 @@ const I18N = {
     'strip.s2': 'Roles & permissions',
     'strip.s3': 'Track who changed what',
     'strip.s4': 'Automatic backups',
-    'strip.s5': 'You can export your data',
+    'strip.s5': 'Technical support & continuous updates',
 
     'out.eyebrow': 'Pharmacy operations',
     'out.title': 'Clearer sales · controlled stock · better daily work',
@@ -1152,6 +1152,12 @@ function currentTheme() {
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('pharmora-theme', theme);
+  document.querySelectorAll('img[data-light][data-dark]').forEach(img => {
+    const themedSrc = theme === 'dark' ? img.dataset.dark : img.dataset.light;
+    if (themedSrc && img.getAttribute('src') !== themedSrc) {
+      img.setAttribute('src', themedSrc);
+    }
+  });
   const meta = document.querySelector('meta[name="theme-color"]');
   if (meta) meta.setAttribute('content', theme === 'dark' ? '#0B1414' : '#0F766E');
   document.querySelectorAll('.theme-btn').forEach(btn => {
