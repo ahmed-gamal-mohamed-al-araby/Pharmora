@@ -4,7 +4,8 @@ const CONTACT = {
   wa: '201023196425',
   tel: '+201023196425',
   email: 'hello@pharmora.com',
-  support: 'support@pharmora.com'
+  support: 'support@pharmora.com',
+  demoApi: (typeof window !== 'undefined' && window.PHARMORA_DEMO_API) || 'http://127.0.0.1:8001/api/v1/demo-requests'
 };
 
 const I18N = {
@@ -37,28 +38,51 @@ const I18N = {
     'hero.t3': 'تقدر تاخد نسخة من بياناتك',
     'hero.t4': 'إعداد وتدريب مع التعاقد',
     'hero.caption': 'لقطات حقيقية من النظام',
+    'hero.screen': 'لوحة التحكم',
 
-    'strip.title': 'أمان وسيطرة كاملة',
-    'strip.s1': 'بيانات صيدليتك لوحدها',
-    'strip.s2': 'أدوار وصلاحيات',
-    'strip.s3': 'تسجيل مين عمل إيه',
-    'strip.s4': 'نسخة احتياطية تلقائية',
-    'strip.s5': 'دعم فني وتحديثات مستمرة',
+    'strip.title': 'من الفاتورة لحد تقفيل الوردية',
+    'strip.s1': 'البيع بالباركود والوحدة',
+    'strip.s2': 'خصم التشغيلة الأقرب صلاحية',
+    'strip.s3': 'فصل حصة التأمين على نفس الفاتورة',
+    'strip.s4': 'عهدة الدرج مع الوردية',
+    'strip.s5': 'الربح بعد التكلفة مش إجمالي البيع',
+
+    'wf.eyebrow': 'يوم الشغل',
+    'wf.title': 'من البيع للربح — نفس الفاتورة',
+    'wf.sub': 'الكاشير يقفل البيع مرة. المخزون والتأمين والدرج والربح يتحدثوا من نفس الفاتورة.',
+    'wf.s1t': 'الكاشير يبيع',
+    'wf.s1d': 'باركود أو اسم. قرص / شريط / علبة. السعر على الوحدة الصحيحة.',
+    'wf.s2t': 'المخزون يتخصم',
+    'wf.s2d': 'الكمية تنزل من التشغيلة الأقرب انتهاءً.',
+    'wf.s3t': 'التأمين يتحسب',
+    'wf.s3d': 'حصة المريض وحصة الشركة على نفس الفاتورة.',
+    'wf.s4t': 'الوردية تتسجل',
+    'wf.s4d': 'الفواتير على عهدة الموظف. آخر اليوم تشوف المتوقع مقابل المعدود.',
+    'wf.s5t': 'الربح يتحدث',
+    'wf.s5d': 'التكلفة والمرتجعات والمصروفات وحصة التأمين تدخل في الحساب.',
+    'wf.screen': 'نقطة البيع',
+    'wf.caption': 'نقطة البيع — فرع واحد، وردية مفتوحة، فاتورة بتتنقل للمخزون والدرج.',
 
     'out.eyebrow': 'شغل الصيدلية',
-    'out.title': 'مبيعات أوضح - مخزون تحت السيطرة - يومية أدق.',
-    'out.sub': 'كل قسم تحت يشرح مشكلة بتقابلها في الشغل، إزاي النظام بيحلها، وإيه اللي يتحسن في الربحية والهدر.',
-    'out.ctaLead': 'جاهز تشوف إزاي ده يشتغل على شغلك؟',
+    'out.title': 'من الكاشير… للمخزون… للربح.',
+    'out.sub': 'الفاتورة الواحدة بتخصم التشغيلة، تحسب التأمين، وتتسجل على الوردية. بعدها تشوف الصلاحية، المستحقات، وصافي الربح.',
+    'out.ctaLead': 'عايز تشوف فاتورة من صيدليتك على النظام؟',
+    'out.ctaTrust': 'بنجهز الأصناف والصلاحيات. حساب صيدليتك منفصل. من غير التزام.',
     'out.ctaPrimary': 'احجز عرض توضيحي',
     'out.ctaSecondary': 'قارن النسخ والأسعار',
+    'out.fefo.screen': 'المخزون والصلاحية',
+    'out.ins.screen': 'مطالبات التأمين',
+    'out.pnl.screen': 'الأرباح والخسائر',
+    'out.cash.screen': 'الورديات',
+    'out.branch.screen': 'الفروع',
 
-    'out.ins.label': '١ — مطالبات التأمين',
+    'out.ins.label': '٢ — مطالبات التأمين',
     'out.ins.problem': 'المشكلة: آخر الشهر بتضيع أيام في فصل حصة التأمين ومراجعة المطالبات يدوي.',
     'out.ins.solution': 'الحل: فصل تلقائي لحصة المريض وشركة التأمين على مستوى كل دواء',
     'out.ins.desc': 'تغطية لكل شركة، متابعة المطالبة لحد التحصيل، وأرقام واضحة لمستحقاتك — من غير إكسيل.',
     'out.ins.result': 'النتيجة: اعرف مستحقاتك بدقة ووفّر أيام المراجعة اليدوية.',
 
-    'out.fefo.label': '٢ — المخزون والصلاحية',
+    'out.fefo.label': '١ — المخزون والصلاحية',
     'out.fefo.problem': 'المشكلة: أدوية بتقرب من الانتهاء وبتنتهي في الدرج — خسارة صامتة كل شهر.',
     'out.fefo.solution': 'الحل: مخزون بالصلاحية — الأقرب صلاحية يتصرف أولاً',
     'out.fefo.desc': 'كل تشغيلة بتاريخها، تنبيهات قبل الانتهاء، والأقرب انتهاءً يتصرف أولاً — من غير ما تبيع الأبعد صلاحية بالغلط.',
@@ -108,7 +132,7 @@ const I18N = {
 
     'sec.eyebrow': 'الأمان والثقة',
     'sec.title': 'بيانات صيدليتك وفلوسك — تحت سيطرتك',
-    'sec.sub': 'ثلاث حاجات أي صاحب صيدلية بيسأل عليها قبل ما ينقل شغله لنظام رقمي.',
+    'sec.sub': 'بعد ما تقتنع بالشغل اليومي: بيانات صيدليتك لوحدها، صلاحيات الموظفين، ونسخة احتياطية — دي أسباب تطمّن مش أسباب الشراء.',
     'sec.foot': 'بيانات صيدليتك لوحدها — نسخة احتياطية تلقائية، وتقدر تاخد نسخة من بياناتك.',
     'sec.cta': 'اقرأ تفاصيل الأمان والثقة ←',
     'sec.p1t': 'الأمان',
@@ -258,6 +282,8 @@ const I18N = {
     'cta.demo': 'احجز عرض توضيحي',
     'cta.sec': 'اطّلع على الأمان',
     'cta.wa': 'واتساب — رد سريع',
+    'cta.trustLead': 'عايز تشوف فاتورة من صيدليتك على النظام؟',
+    'cta.trustBody': 'بنجهز الأصناف والصلاحيات. حساب صيدليتك منفصل. من غير التزام.',
     'cta.micro': 'بعد الحجز: نؤكّد الموعد · نجهّز العرض التوضيحي على شغلك · من غير بطاقة ائتمان',
     'cta.s1': 'احجز عرض توضيحي',
     'cta.s2': 'نجهّز حسابك',
@@ -274,6 +300,7 @@ const I18N = {
 
     'ab.eyebrow': 'عن Pharmora',
     'ab.title': 'Pharmora بيربط الفاتورة بالتشغيلة والتأمين وعُهدة الدرج',
+    'ab.screenDash': 'لوحة التحكم',
     'ab.sub': 'بيع علبة على الكاشير ممكن يغيّر رصيد تشغيلة، وحساب شركة التأمين، وعُهدة الوردية في نفس اللحظة. المفروض الحركات دي ما تحتاجش تتسجل أو تتراجع في ثلاث أماكن مختلفة. في Pharmora، كلها بترجع لنفس الفاتورة.',
     'ab.ctaSec': 'اقرأ عن الصلاحيات وحماية البيانات',
     'ab.whyEy': 'ليه بدأنا',
@@ -316,6 +343,7 @@ const I18N = {
     'ab.eg1': 'بيع وشراء بأكثر من وحدة للصنف',
     'ab.eg2': 'حصة المريض وشركة التأمين على مستوى الدواء',
     'ab.eg3': 'ورديات وعُهدة درج وأرصدة موردين',
+    'ab.screenPos': 'نقطة البيع',
     'ab.coEy': 'وقت الإعداد وبعده',
     'ab.coT': 'قبل التشغيل، بنحدد المطلوب',
     'ab.coS': 'بنراجع شكل البيانات الموجودة، المستخدمين وصلاحياتهم، وطريقة الشغل في كل وردية. لو نقل البيانات أو ميزة معينة محتاجين تجهيز، بنحدد ده قبل ما نبدأ.',
@@ -369,6 +397,7 @@ const I18N = {
     'st.b1': 'نسخة احتياطية تلقائية — لو حصل مشكلة في الجهاز، شغلك محفوظ',
     'st.b2': 'تقدر تاخد نسخة من بياناتك عند الحاجة — لأنها ملكك',
     'st.b3': 'من غير ادعاءات شهادات غير معلنة — بنوصف اللي النظام بيعمله فعلاً',
+    'st.screen': 'الأرباح والخسائر',
     'st.rEy': 'الموثوقية',
     'st.rT': 'ممارسات تشغيل مسؤولة للمنتج',
     'st.rS': 'نظام الصيدلية لازم يفضل ثابت وهو بيتطور. بنشتغل بعقلية إنتاج مسؤولة.',
@@ -406,6 +435,7 @@ const I18N = {
     'pd.ctaSee': 'شوف الشاشات',
     'pd.ctaSec': 'الأمان والثقة',
     'pd.pos.label': '١ — نقطة البيع والمبيعات',
+    'pd.pos.screen': 'نقطة البيع',
     'pd.pos.problem': 'المشكلة: الدنيا زحمة، وعايز تبيع بسرعة من غير ما تقف تحسب الوحدة يدوي أو تنسى تفصل حصة التأمين.',
     'pd.pos.t': 'تبيع بالباركود، وتختار الوحدة (قرص/شريط/علبة) من نفس الشاشة',
     'pd.pos.d': 'النظام بيفصلّك حصة التأمين على كل دواء لوحده تلقائي، من غير ما تحسب على الآلة الحاسبة.',
@@ -415,6 +445,7 @@ const I18N = {
     'pd.pos.l4': 'طرق دفع واضحة في الفاتورة',
     'pd.pos.result': 'النتيجة: صف أقصر، وفاتورة مظبوطة من أول مرة.',
     'pd.inv.label': '٢ — إدارة المخزون',
+    'pd.inv.screen': 'المخزون',
     'pd.inv.problem': 'المشكلة: بتعمل جرد وتلاقي الأرقام مش زي اللي في دماغك — رصيد بيضيع بين البيع والشراء.',
     'pd.inv.t': 'كل صنف وكل تشغيلة، رصيدهم واضح قدامك على طول',
     'pd.inv.d': 'مش محتاج تنزل تعد يدوي كل شوية — الحركة بتتسجل من أول ما تبيع أو تشتري.',
@@ -424,6 +455,7 @@ const I18N = {
     'pd.inv.l4': 'ربط المشتريات بالتشغيلات',
     'pd.inv.result': 'النتيجة: تعرف اللي خلص فعلاً، وتطلب صح من غير تخمين.',
     'pd.exp.label': '٣ — الصلاحية — الأقرب يتصرف أولاً',
+    'pd.exp.screen': 'الصلاحية',
     'pd.exp.problem': 'المشكلة: علبة بتقعد في الدرج لحد ما تنتهي وتترمي — وده بيحصل أكتر مما تتخيل.',
     'pd.exp.t': 'النظام بيصرفلك الأقرب انتهاءً الأول من غير ما تفكر فيها',
     'pd.exp.d': 'بينبهك قبل ما أي حاجة تقرب تخلص صلاحيتها، عشان تتصرف فيها بدل ما تخسرها.',
@@ -433,6 +465,7 @@ const I18N = {
     'pd.exp.l4': 'منع بيع تشغيلة أبعد صلاحية بالغلط',
     'pd.exp.result': 'النتيجة: هدر أقل، ودرج مرتب من غير عناء.',
     'pd.ins.label': '٤ — التأمين والمطالبات',
+    'pd.ins.screen': 'مطالبات التأمين',
     'pd.ins.problem': 'المشكلة: آخر الشهر بتقعد تفصل حصة كل شركة تأمين دواء دواء، وده بياخد أيام.',
     'pd.ins.t': 'كل شركة وتغطيتها متسجلة، والفصل بيحصل أوتوماتيك',
     'pd.ins.d': 'بتتابع كل مطالبة من ساعة ما اتباعت لحد ما تتحصّل، من غير إكسيل.',
@@ -442,6 +475,7 @@ const I18N = {
     'pd.ins.l4': 'أرقام واضحة من غير إكسيل',
     'pd.ins.result': 'النتيجة: تعرف مستحقاتك بالظبط، وتوفر أيام كنت بتضيعها في المراجعة.',
     'pd.fin.label': '٥ — التقارير والربحية',
+    'pd.fin.screen': 'الأرباح والخسائر',
     'pd.fin.problem': 'المشكلة: آخر الشهر بتشوف مبيعات كويسة، بس مش عارف فعلاً كسبت كام بعد كل حاجة.',
     'pd.fin.t': 'بعد ما تحسب تكلفة البضاعة والمصروفات، يبقى قدامك صافي ربحك الحقيقي',
     'pd.fin.d': 'مش بس رقم مبيعات إجمالي — ده رقم بعد ما يتخصم منه كل حاجة فعلاً.',
@@ -451,6 +485,7 @@ const I18N = {
     'pd.fin.l4': 'ورديات وعُهدة الدرج',
     'pd.fin.result': 'النتيجة: تاخد قرارك على أساس ربح حقيقي، مش على أساس رقم بيضحك عليك.',
     'pd.perm.label': '٦ — الموظفين والصلاحيات',
+    'pd.perm.screen': 'الموظفون',
     'pd.perm.problem': 'المشكلة: حصل تعديل في فاتورة أو سعر ومش عارف مين اللي عمله.',
     'pd.perm.t': 'كل موظف بصلاحياته، وكل تعديل بيتسجل باسم اللي عمله',
     'pd.perm.d': 'الكاشير يشتغل على اللي يخصه بس، وأي حركة حساسة بتفضل مسجلة تحت عينك.',
@@ -461,6 +496,7 @@ const I18N = {
     'pd.perm.result': 'النتيجة: تعرف مين عمل إيه، ومسؤولية كل حد واضحة.',
     'pd.perm.link': 'تفاصيل الأمان والثقة ←',
     'pd.br.label': 'متعدد الفروع',
+    'pd.br.screen': 'الفروع',
     'pd.br.problem': 'المشكلة: كل فرع بأرقام منفصلة — وصعب تشوف الصورة الكاملة.',
     'pd.br.t': 'أكتر من فرع — بنفس الضوابط والتقارير',
     'pd.br.d': 'لسلاسل الصيدليات: حساب موحّد، إعداد مخصص، ونفس دقة التأمين والمخزون والربح.',
@@ -478,6 +514,7 @@ const I18N = {
     'dm.flowT': 'إيه اللي هتشوفه في العرض التوضيحي؟',
     'dm.flowS': 'جولة على البيع والمخزون والتأمين — مش فيديو مسجّل. نشوف شغل قريب من صيدليتك.',
     'dm.step1t': '١) طريقة البيع',
+    'dm.screen': 'نقطة البيع',
     'dm.step1d': 'بيعة بالباركود، وحدات، وتأمين — نشوف ازاي الفاتورة بتطلع صح من أول مرة.',
     'dm.step2t': '٢) إدارة المخزون والصلاحية',
     'dm.step2d': 'تشغيلات، الأقرب انتهاءً يتصرف أولاً، وتنبيهات قبل الانتهاء — ازاي تقلل الهدر.',
@@ -486,7 +523,7 @@ const I18N = {
     'dm.trustNote': 'عرض توضيحي على شغلك — مش عرض عام. من غير وعود أو أرقام وهمية.',
     'dm.formEy': 'احجز عرض توضيحي',
     'dm.formT': 'احجز عرض توضيحي',
-    'dm.formS': 'املأ البيانات وابعت على واتساب. هنؤكّد الموعد ونجهّز عرضًا توضيحيًا على شغلك.',
+    'dm.formS': 'املأ البيانات. هنستلم الطلب ونتواصل معاك لعرض Pharmora على شغلك.',
     'dm.b1': 'عربي أو إنجليزي — حسب راحتك',
     'dm.b2': 'مناسب لصيدلية واحدة أو فروع',
     'dm.b3': 'بعد العرض التوضيحي: فريق Pharmora يجهّز النظام ويدرب الموظفين',
@@ -496,15 +533,27 @@ const I18N = {
     'dm.fPharm': 'اسم الصيدلية',
     'dm.fPharmP': 'صيدلية النور',
     'dm.fBranches': 'عدد الفروع',
-    'dm.br1': 'فرع واحد',
-    'dm.br2': '٢–٣ فروع',
-    'dm.br3': '٤ فروع أو أكثر',
+    'dm.fBranchesP': 'مثال: 3',
     'dm.fPhone': 'موبايل / واتساب',
+    'dm.fEmail': 'البريد الإلكتروني (اختياري)',
+    'dm.fEmailP': 'name@example.com',
     'dm.fTime': 'الوقت المفضّل',
     'dm.fTimeP': 'مثال: الخميس بعد الظهر',
     'dm.send': 'احجز عرض توضيحي',
+    'dm.sending': 'جاري الإرسال…',
+    'dm.ok': 'تم استلام طلبك بنجاح. سنتواصل معك قريبًا لعرض Pharmora على شغلك.',
+    'dm.err': 'تعذر إرسال الطلب الآن. حاول مرة أخرى أو راسلنا على واتساب.',
+    'dm.err422': 'راجع البيانات المطلوبة وحاول مرة أخرى.',
+    'dm.err429': 'طلبات كتير في وقت قصير. استنى دقيقة وحاول مرة أخرى.',
+    'dm.reqName': 'الاسم مطلوب.',
+    'dm.reqPharm': 'اسم الصيدلية مطلوب.',
+    'dm.reqPhone': 'رقم الموبايل مطلوب.',
+    'dm.reqBranches': 'عدد الفروع مطلوب.',
+    'dm.badBranches': 'اكتب عدد فروع صحيح، رقم صحيح أكبر من صفر.',
+    'dm.badPhone': 'اكتب رقم موبايل مصري صحيح، مثل 01012345678 أو +20 1012345678.',
+    'dm.badEmail': 'صيغة البريد الإلكتروني غير صحيحة.',
     'dm.waLine': 'أو راسلنا على واتساب:',
-    'dm.note': 'الطلب بيفتح واتساب برسالة جاهزة — الصفحة مش بتخزن بيانات على سيرفر.',
+    'dm.note': 'بعد الإرسال هنتواصل معاك لتأكيد الموعد. تقدر كمان تراسلنا على واتساب.',
 
     'pv.eyebrow': 'قانوني',    'pv.eyebrow': 'قانوني',
     'pv.title': 'سياسة الخصوصية',
@@ -561,7 +610,9 @@ const I18N = {
     'ct.fMsg': 'موعد أو ملاحظة',
     'ct.fMsgP': 'مثال: الخميس بعد الظهر',
     'ct.send': 'احجز عرض توضيحي',
-    'ct.note': 'الزر بيفتح واتساب برسالة جاهزة — الصفحة مش بتخزن بيانات على سيرفر.',
+    'ct.sending': 'جاري الإرسال…',
+    'ct.ok': 'تم استلام رسالتك. سنتواصل معك قريبًا. تقدر كمان تراسلنا على واتساب.',
+    'ct.note': 'هنستلم الطلب ونتواصل معاك. واتساب والهاتف متاحين لو حابب رد أسرع.',
     'ct.waMsg': 'أرغب في معرفة تفاصيل Pharmora وحجز عرض توضيحي',
   },
   en: {
@@ -593,28 +644,51 @@ const I18N = {
     'hero.t3': 'You can export your data',
     'hero.t4': 'Setup & training included',
     'hero.caption': 'Real screenshots from the system',
+    'hero.screen': 'Dashboard',
 
-    'strip.title': 'Complete security & control',
-    'strip.s1': 'Separate data per pharmacy',
-    'strip.s2': 'Roles & permissions',
-    'strip.s3': 'Track who changed what',
-    'strip.s4': 'Automatic backups',
-    'strip.s5': 'Technical support & continuous updates',
+    'strip.title': 'From the invoice through shift close',
+    'strip.s1': 'Barcode and unit selling',
+    'strip.s2': 'Nearest-expiry batch deducted',
+    'strip.s3': 'Insurance share split on the same invoice',
+    'strip.s4': 'Drawer accountability with the shift',
+    'strip.s5': 'Profit after cost, not sales total',
+
+    'wf.eyebrow': 'The working day',
+    'wf.title': 'From the sale to profit — one invoice',
+    'wf.sub': 'The cashier closes the sale once. Stock, insurance, the drawer, and profit update from that same invoice.',
+    'wf.s1t': 'The cashier sells',
+    'wf.s1d': 'Barcode or name. Tablet / strip / box. The price matches the unit.',
+    'wf.s2t': 'Stock is deducted',
+    'wf.s2d': 'Quantity comes off the nearest-expiry batch.',
+    'wf.s3t': 'Insurance is calculated',
+    'wf.s3d': 'Patient share and insurer share on the same invoice.',
+    'wf.s4t': 'The shift is recorded',
+    'wf.s4d': 'Invoices sit on that cashier’s drawer. At close you see expected cash versus counted cash.',
+    'wf.s5t': 'Profit updates',
+    'wf.s5d': 'Cost, returns, expenses, and the insurer share enter the calculation.',
+    'wf.screen': 'Point of sale',
+    'wf.caption': 'Point of sale — one branch, an open shift, an invoice that moves stock and the drawer.',
 
     'out.eyebrow': 'Pharmacy operations',
-    'out.title': 'Clearer sales - controlled stock - better daily work.',
-    'out.sub': 'Each section below covers a problem you face at work, how the system handles it, and what improves in profit and waste.',
-    'out.ctaLead': 'Ready to see how this works for your pharmacy?',
+    'out.title': 'From the cashier… to stock… to profit.',
+    'out.sub': 'One invoice deducts the batch, calculates insurance, and records the shift. Then you see expiry, receivables, and net profit.',
+    'out.ctaLead': 'Want to see an invoice from your pharmacy on the system?',
+    'out.ctaTrust': 'We set up items and permissions. Your pharmacy account stays separate. No commitment.',
     'out.ctaPrimary': 'Book a Demo',
     'out.ctaSecondary': 'Compare plans & pricing',
+    'out.fefo.screen': 'Inventory & expiry',
+    'out.ins.screen': 'Insurance claims',
+    'out.pnl.screen': 'Profit and loss',
+    'out.cash.screen': 'Shifts',
+    'out.branch.screen': 'Branches',
 
-    'out.ins.label': '1 — Insurance claims',
+    'out.ins.label': '2 — Insurance claims',
     'out.ins.problem': 'Problem: End-of-month days lost splitting insurer shares and reviewing claims by hand.',
     'out.ins.solution': 'Solution: Automatic patient vs insurer split at the drug level',
     'out.ins.desc': 'Per-insurer coverage, claims tracked to settlement, clear receivables — without Excel.',
     'out.ins.result': 'Impact: Know what you are owed and reclaim days of manual review.',
 
-    'out.fefo.label': '2 — Inventory & expiry',
+    'out.fefo.label': '1 — Inventory & expiry',
     'out.fefo.problem': 'Problem: Near-expiry stock quietly becomes waste on the shelf.',
     'out.fefo.solution': 'Solution: Batch inventory — nearest expiry dispenses first',
     'out.fefo.desc': 'Every batch has its date, alerts before expiry, and automatic dispense that prevents selling the wrong batch.',
@@ -664,7 +738,7 @@ const I18N = {
 
     'sec.eyebrow': 'Security & trust',
     'sec.title': 'Your pharmacy data and money — under your control',
-    'sec.sub': 'Three things every pharmacy owner asks before moving to a digital system.',
+    'sec.sub': 'Once the daily work is clear: your pharmacy data stays separate, staff have roles, and backups run — trust reasons, not the reason to buy.',
     'sec.foot': 'Your pharmacy data stays separate — automatic backups, and you can export your data.',
     'sec.cta': 'Read security & trust details →',
     'sec.p1t': 'Security',
@@ -809,6 +883,8 @@ const I18N = {
     'cta.demo': 'Book a Demo',
     'cta.sec': 'View security details',
     'cta.wa': 'WhatsApp — quick reply',
+    'cta.trustLead': 'Want to see an invoice from your pharmacy on the system?',
+    'cta.trustBody': 'We set up items and permissions. Your pharmacy account stays separate. No commitment.',
     'cta.micro': 'After booking: we confirm the slot · prepare a demo tailored to your operations · no credit card',
     'cta.s1': 'Book a Demo',
     'cta.s2': 'We set up your account',
@@ -825,6 +901,7 @@ const I18N = {
 
     'ab.eyebrow': 'About Pharmora',
     'ab.title': 'Pharmora keeps the invoice, batch, insurer, and cash drawer on the same record',
+    'ab.screenDash': 'Dashboard',
     'ab.sub': 'A box sold at the counter can change a batch balance, an insurance share, and the drawer for that shift. Those entries should not have to be recorded or checked in three different places. In Pharmora, they lead back to the same invoice.',
     'ab.ctaSec': 'Read about permissions and data protection',
     'ab.whyEy': 'Why we started',
@@ -867,6 +944,7 @@ const I18N = {
     'ab.eg1': 'Buying and selling in more than one medicine unit',
     'ab.eg2': 'Patient and insurer shares calculated per medicine',
     'ab.eg3': 'Shifts, drawer accountability, and supplier balances',
+    'ab.screenPos': 'Point of sale',
     'ab.coEy': 'Setup and support',
     'ab.coT': 'Define the work before the account goes live',
     'ab.coS': 'We review the available data, user roles, and how each shift is run. If migration or a requested feature needs additional work, that is identified before setup begins.',
@@ -920,6 +998,7 @@ const I18N = {
     'st.b1': 'Automatic backups — if a device fails, your work is saved',
     'st.b2': 'Export capability when needed — because customers own their data',
     'st.b3': 'No undeclared certification claims — we describe what the system actually does',
+    'st.screen': 'Profit and loss',
     'st.rEy': 'Reliability',
     'st.rT': 'Responsible production practices',
     'st.rS': 'Pharmacy software must stay stable as it evolves. We operate with a production mindset.',
@@ -957,6 +1036,7 @@ const I18N = {
     'pd.ctaSee': 'See the screens',
     'pd.ctaSec': 'Security & Trust',
     'pd.pos.label': '1 — Point of sale',
+    'pd.pos.screen': 'Point of sale',
     'pd.pos.problem': 'Problem: long queues, unit or insurance share mistakes, invoices that need fixing.',
     'pd.pos.t': 'Barcode sales — units and insurance on one screen',
     'pd.pos.d': 'The cashier sells by barcode or name, picks the unit (tablet/strip/box), and the system splits the insurance share per drug.',
@@ -966,6 +1046,7 @@ const I18N = {
     'pd.pos.l4': 'Clear payment methods on the invoice',
     'pd.pos.result': 'Result: faster queue, fewer errors, a correct invoice the first time.',
     'pd.inv.label': '2 — Inventory management',
+    'pd.inv.screen': 'Inventory',
     'pd.inv.problem': 'Problem: unsure about real stock levels — and counts take time.',
     'pd.inv.t': 'Batch inventory — every quantity has a date and source',
     'pd.inv.d': 'Each batch has its own balance. Movements link to sales and purchases — not numbers on paper.',
@@ -975,6 +1056,7 @@ const I18N = {
     'pd.inv.l4': 'Purchases tied to batches',
     'pd.inv.result': 'Result: clearer stock and better purchasing decisions.',
     'pd.exp.label': '3 — Expiry control',
+    'pd.exp.screen': 'Expiry',
     'pd.exp.problem': 'Problem: near-expiry stock quietly becomes waste on the shelf.',
     'pd.exp.t': 'Nearest expiry dispenses first — automatically',
     'pd.exp.d': 'On sale, the system picks the nearest-expiry batch. Alerts before dates pass.',
@@ -984,6 +1066,7 @@ const I18N = {
     'pd.exp.l4': 'Prevents selling the wrong batch',
     'pd.exp.result': 'Result: less waste and expiry under control.',
     'pd.ins.label': '4 — Insurance & claims',
+    'pd.ins.screen': 'Insurance claims',
     'pd.ins.problem': 'Problem: end-of-month days lost splitting insurer shares and reviewing claims by hand.',
     'pd.ins.t': 'Automatic share split — claims tracked to settlement',
     'pd.ins.d': 'Insurance is calculated per drug. Claims are followed from sale through collection.',
@@ -993,6 +1076,7 @@ const I18N = {
     'pd.ins.l4': 'Clear numbers without Excel',
     'pd.ins.result': 'Result: clearer receivables and fewer manual review days.',
     'pd.fin.label': '5 — Reports & profitability',
+    'pd.fin.screen': 'Profit and loss',
     'pd.fin.problem': 'Problem: sales totals do not show whether the pharmacy is truly profitable.',
     'pd.fin.t': 'Net profit after cost and expenses — not surface numbers',
     'pd.fin.d': 'Daily sales reports, profit after COGS, approved expenses, and shift drawer counts.',
@@ -1002,6 +1086,7 @@ const I18N = {
     'pd.fin.l4': 'Shifts and drawer counts',
     'pd.fin.result': 'Result: decisions based on real profit — not “total sales.”',
     'pd.perm.label': '6 — Users & permissions',
+    'pd.perm.screen': 'Employees',
     'pd.perm.problem': 'Problem: you do not know who changed a price or invoice — and cashiers have too much access.',
     'pd.perm.t': 'Clear roles — and a log for every sensitive action',
     'pd.perm.d': 'Owner, pharmacist, cashier, accountant — each sees and does what fits their role. Sensitive changes are logged.',
@@ -1012,6 +1097,7 @@ const I18N = {
     'pd.perm.result': 'Result: clear accountability and owner visibility.',
     'pd.perm.link': 'Security & Trust details →',
     'pd.br.label': 'Multi-branch',
+    'pd.br.screen': 'Branches',
     'pd.br.problem': 'Problem: each branch has separate numbers — hard to see the full picture.',
     'pd.br.t': 'Multiple branches — same controls and reports',
     'pd.br.d': 'For pharmacy chains: unified account, tailored setup, same insurance, inventory, and profit accuracy.',
@@ -1029,6 +1115,7 @@ const I18N = {
     'dm.flowT': 'What will you see in the demo?',
     'dm.flowS': 'A demo of sales, inventory, and insurance — not a recorded video. We show work close to yours.',
     'dm.step1t': '1) How selling works',
+    'dm.screen': 'Point of sale',
     'dm.step1d': 'A barcode sale with units and insurance — how the invoice comes out correct the first time.',
     'dm.step2t': '2) Inventory and expiry',
     'dm.step2d': 'Batches, nearest expiry first, and expiry alerts — how to cut waste.',
@@ -1037,7 +1124,7 @@ const I18N = {
     'dm.trustNote': 'The demo is built around your questions — not a generic pitch. No fake promises or numbers.',
     'dm.formEy': 'Book a Demo',
     'dm.formT': 'Book a Demo',
-    'dm.formS': 'Fill in the form and send via WhatsApp. We confirm the slot and prepare a demo tailored to your operations.',
+    'dm.formS': 'Fill in the form. We will receive the request and contact you to show Pharmora on your operations.',
     'dm.b1': 'Arabic or English — your choice',
     'dm.b2': 'For one pharmacy or multiple branches',
     'dm.b3': 'After the demo: setup and training with our team',
@@ -1047,15 +1134,27 @@ const I18N = {
     'dm.fPharm': 'Pharmacy name',
     'dm.fPharmP': 'Al-Nour Pharmacy',
     'dm.fBranches': 'Number of branches',
-    'dm.br1': '1 branch',
-    'dm.br2': '2–3 branches',
-    'dm.br3': '4+ branches',
+    'dm.fBranchesP': 'Example: 3',
     'dm.fPhone': 'Mobile / WhatsApp',
+    'dm.fEmail': 'Email (optional)',
+    'dm.fEmailP': 'name@example.com',
     'dm.fTime': 'Preferred time',
     'dm.fTimeP': 'e.g. Thursday afternoon',
     'dm.send': 'Book a Demo',
+    'dm.sending': 'Sending…',
+    'dm.ok': 'Your demo request has been received. We will contact you soon.',
+    'dm.err': 'We could not send the request right now. Please try again or message us on WhatsApp.',
+    'dm.err422': 'Please check the required fields and try again.',
+    'dm.err429': 'Too many requests in a short time. Wait a minute and try again.',
+    'dm.reqName': 'Name is required.',
+    'dm.reqPharm': 'Pharmacy name is required.',
+    'dm.reqPhone': 'Phone number is required.',
+    'dm.reqBranches': 'Number of branches is required.',
+    'dm.badBranches': 'Enter a whole number of branches, 1 or more.',
+    'dm.badPhone': 'Enter a valid Egyptian mobile number, such as 01012345678 or +20 1012345678.',
+    'dm.badEmail': 'Enter a valid email address.',
     'dm.waLine': 'Or message us on WhatsApp:',
-    'dm.note': 'Opens WhatsApp with a pre-filled message — nothing is stored on a server.',
+    'dm.note': 'After you submit, we will contact you to confirm the slot. You can also message us on WhatsApp.',
 
     'pv.eyebrow': 'Legal',
     'pv.title': 'Privacy Policy',
@@ -1112,7 +1211,9 @@ const I18N = {
     'ct.fMsg': 'Preferred time or note',
     'ct.fMsgP': 'e.g. Thursday afternoon',
     'ct.send': 'Book a Demo',
-    'ct.note': 'Opens WhatsApp with a pre-filled message — nothing is stored on a server.',
+    'ct.sending': 'Sending…',
+    'ct.ok': 'Your message has been received. We will contact you shortly. You can also reach us on WhatsApp.',
+    'ct.note': 'We will receive your request and get back to you. WhatsApp and phone remain available for a quicker reply.',
     'ct.waMsg': 'Hello, I\'d like to book a Pharmora demo',
   }
 };
@@ -1216,7 +1317,90 @@ function mountSiteFooter() {
   </div>`;
 }
 
+function t(key) {
+  const dict = I18N[currentLang()] || {};
+  return dict[key] !== undefined ? dict[key] : '';
+}
+
+const UTM_KEYS = ['utm_source', 'utm_medium', 'utm_campaign'];
+
+function captureUtmParams() {
+  try {
+    const params = new URLSearchParams(location.search);
+    UTM_KEYS.forEach(key => {
+      const value = params.get(key);
+      if (value) sessionStorage.setItem('pharmora-' + key, value);
+    });
+  } catch (e) { /* ignore */ }
+}
+
+function readUtmParams() {
+  const out = {};
+  try {
+    const params = new URLSearchParams(location.search);
+    UTM_KEYS.forEach(key => {
+      const value = (params.get(key) || sessionStorage.getItem('pharmora-' + key) || '').trim();
+      if (value) out[key] = value;
+    });
+  } catch (e) { /* ignore */ }
+  return out;
+}
+
+function egyptianMobile(raw) {
+  const ascii = String(raw || '').trim().replace(/[٠-٩]/g, digit => String('٠١٢٣٤٥٦٧٨٩'.indexOf(digit)));
+  let digits = ascii.replace(/\D/g, '');
+  if (digits.startsWith('0020')) digits = digits.slice(4);
+  else if (digits.startsWith('20')) digits = digits.slice(2);
+  else if (digits.startsWith('0')) digits = digits.slice(1);
+  if (!/^1[0125]\d{8}$/.test(digits)) return null;
+  return '0' + digits;
+}
+
+function parseBranchCount(raw) {
+  const ascii = String(raw || '').trim().replace(/[٠-٩]/g, digit => String('٠١٢٣٤٥٦٧٨٩'.indexOf(digit)));
+  if (!ascii) return { empty: true };
+  if (!/^\d+$/.test(ascii)) return { invalid: true };
+  const n = Number(ascii);
+  if (!Number.isInteger(n) || n < 1 || n > 10000) return { invalid: true };
+  return { value: n };
+}
+
+function setDemoStatus(el, type, message) {
+  if (!el) return;
+  el.hidden = !message;
+  el.textContent = message || '';
+  el.classList.toggle('is-ok', type === 'ok');
+  el.classList.toggle('is-err', type === 'err');
+}
+
+function setLeadLoading(btnId, loading) {
+  const btn = document.getElementById(btnId);
+  if (!btn) return;
+  btn.disabled = loading;
+  btn.classList.toggle('is-loading', loading);
+  btn.setAttribute('aria-busy', loading ? 'true' : 'false');
+  const label = btn.querySelector('.btn-label');
+  const pending = btn.querySelector('.btn-loading');
+  if (label) label.hidden = loading;
+  if (pending) pending.hidden = !loading;
+}
+
+function setDemoLoading(loading) {
+  setLeadLoading('demo-submit', loading);
+}
+
+function buildDemoMessage(time) {
+  const parts = [];
+  if (time) parts.push((currentLang() === 'ar' ? 'الوقت المفضّل: ' : 'Preferred time: ') + time);
+  const utm = readUtmParams();
+  UTM_KEYS.forEach(key => {
+    if (utm[key]) parts.push(key + ': ' + utm[key]);
+  });
+  return parts.length ? parts.join('\n') : null;
+}
+
 document.addEventListener('DOMContentLoaded', () => {
+  captureUtmParams();
   mountSiteFooter();
 
   document.querySelectorAll('a[data-tel]').forEach(a => a.href = 'tel:' + CONTACT.tel);
@@ -1269,64 +1453,231 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const form = document.getElementById('leadForm');
   if (form) {
+    const nameInput = document.getElementById('f-name');
+    const pharmacyInput = document.getElementById('f-pharmacy');
+    const phoneInput = document.getElementById('f-phone');
     const planSel = document.getElementById('f-plan');
+    const statusEl = document.getElementById('contact-form-status');
+    const honeypot = document.getElementById('f-website');
     const urlPlan = new URLSearchParams(location.search).get('plan');
     if (planSel && urlPlan && [...planSel.options].some(o => o.value === urlPlan)) {
       planSel.value = urlPlan;
     }
-    form.addEventListener('submit', e => {
+
+    const clearValidity = el => {
+      if (!el) return;
+      el.setCustomValidity('');
+      el.classList.remove('is-invalid');
+    };
+    [nameInput, pharmacyInput, phoneInput].forEach(el => {
+      if (!el) return;
+      el.addEventListener('input', () => clearValidity(el));
+    });
+
+    const failField = (el, message) => {
+      el.setCustomValidity(message);
+      el.classList.add('is-invalid');
+      el.reportValidity();
+      el.focus();
+      setDemoStatus(statusEl, 'err', message);
+    };
+
+    const showSuccess = () => {
+      form.reset();
+      [nameInput, pharmacyInput, phoneInput].forEach(clearValidity);
+      setDemoStatus(statusEl, 'ok', t('ct.ok'));
+    };
+
+    form.addEventListener('submit', async e => {
       e.preventDefault();
-      const lang = currentLang();
-      const name = document.getElementById('f-name').value.trim();
-      const pharmacy = document.getElementById('f-pharmacy').value.trim();
-      const phone = document.getElementById('f-phone').value.trim();
-      const extra = (document.getElementById('f-msg')?.value || '').trim();
-      const lines = lang === 'ar'
-        ? ['مرحباً، عايز أحجز عرض توضيحي لنظام Pharmora:', '', 'الاسم: ' + name, 'الصيدلية: ' + pharmacy, 'رقم التواصل: ' + phone]
-        : ['Hello, I\'d like to book a Pharmora demo:', '', 'Name: ' + name, 'Pharmacy: ' + pharmacy, 'Phone: ' + phone];
-      if (planSel && planSel.value) {
-        lines.push((lang === 'ar' ? 'الخطة: ' : 'Plan: ') + planSel.selectedOptions[0].textContent.trim());
+      setDemoStatus(statusEl, '', '');
+      [nameInput, pharmacyInput, phoneInput].forEach(clearValidity);
+
+      if ((honeypot?.value || '').trim()) {
+        showSuccess();
+        return;
       }
-      if (extra) lines.push((lang === 'ar' ? 'ملاحظة: ' : 'Note: ') + extra);
-      window.open('https://wa.me/' + CONTACT.wa + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+
+      const lang = currentLang();
+      const name = nameInput.value.trim();
+      const pharmacy = pharmacyInput.value.trim();
+      const rawPhone = phoneInput.value.trim();
+      const extra = (document.getElementById('f-msg')?.value || '').trim();
+
+      if (!name) return failField(nameInput, t('dm.reqName'));
+      if (!pharmacy) return failField(pharmacyInput, t('dm.reqPharm'));
+      if (!rawPhone) return failField(phoneInput, t('dm.reqPhone'));
+
+      const phone = egyptianMobile(rawPhone);
+      if (!phone) return failField(phoneInput, t('dm.badPhone'));
+
+      const parts = [];
+      if (planSel && planSel.value) {
+        parts.push((lang === 'ar' ? 'الخطة: ' : 'Plan: ') + planSel.selectedOptions[0].textContent.trim());
+      }
+      if (extra) parts.push((lang === 'ar' ? 'ملاحظة: ' : 'Note: ') + extra);
+      const utm = readUtmParams();
+      UTM_KEYS.forEach(key => {
+        if (utm[key]) parts.push(key + ': ' + utm[key]);
+      });
+
+      const payload = {
+        type: 'contact',
+        name,
+        pharmacy_name: pharmacy,
+        phone,
+        source: 'website'
+      };
+      if (parts.length) payload.message = parts.join('\n');
+
+      setLeadLoading('contact-submit', true);
+      try {
+        const res = await fetch(CONTACT.demoApi, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Accept-Language': lang === 'ar' ? 'ar' : 'en'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (res.status === 201) {
+          showSuccess();
+          return;
+        }
+        if (res.status === 422) {
+          setDemoStatus(statusEl, 'err', t('dm.err422'));
+          return;
+        }
+        if (res.status === 429) {
+          setDemoStatus(statusEl, 'err', t('dm.err429'));
+          return;
+        }
+        setDemoStatus(statusEl, 'err', t('dm.err'));
+      } catch (err) {
+        setDemoStatus(statusEl, 'err', t('dm.err'));
+      } finally {
+        setLeadLoading('contact-submit', false);
+      }
     });
   }
 
   const demoForm = document.getElementById('demoForm');
   if (demoForm) {
+    const nameInput = document.getElementById('d-name');
+    const pharmacyInput = document.getElementById('d-pharmacy');
+    const branchesInput = document.getElementById('d-branches');
     const phoneInput = document.getElementById('d-phone');
-    phoneInput.addEventListener('input', () => phoneInput.setCustomValidity(''));
+    const emailInput = document.getElementById('d-email');
+    const statusEl = document.getElementById('demo-form-status');
+    const honeypot = document.getElementById('d-website');
+    const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    demoForm.addEventListener('submit', e => {
+    const clearValidity = el => {
+      if (!el) return;
+      el.setCustomValidity('');
+      el.classList.remove('is-invalid');
+    };
+    [nameInput, pharmacyInput, branchesInput, phoneInput, emailInput].forEach(el => {
+      if (!el) return;
+      el.addEventListener('input', () => clearValidity(el));
+    });
+
+    const failField = (el, message) => {
+      el.setCustomValidity(message);
+      el.classList.add('is-invalid');
+      el.reportValidity();
+      el.focus();
+      setDemoStatus(statusEl, 'err', message);
+    };
+
+    const showSuccess = () => {
+      demoForm.reset();
+      [nameInput, pharmacyInput, branchesInput, phoneInput, emailInput].forEach(clearValidity);
+      setDemoStatus(statusEl, 'ok', t('dm.ok'));
+    };
+
+    demoForm.addEventListener('submit', async e => {
       e.preventDefault();
-      const lang = currentLang();
-      const name = document.getElementById('d-name').value.trim();
-      const pharmacy = document.getElementById('d-pharmacy').value.trim();
-      const branches = document.getElementById('d-branches');
-      const rawPhone = phoneInput.value.trim();
-      const asciiPhone = rawPhone.replace(/[٠-٩]/g, digit => String('٠١٢٣٤٥٦٧٨٩'.indexOf(digit)));
-      let phoneDigits = asciiPhone.replace(/\D/g, '');
-      if (phoneDigits.startsWith('0020')) phoneDigits = phoneDigits.slice(4);
-      else if (phoneDigits.startsWith('20')) phoneDigits = phoneDigits.slice(2);
-      else if (phoneDigits.startsWith('0')) phoneDigits = phoneDigits.slice(1);
+      setDemoStatus(statusEl, '', '');
+      [nameInput, pharmacyInput, branchesInput, phoneInput, emailInput].forEach(clearValidity);
 
-      if (!/^1[0125][0-9]{8}$/.test(phoneDigits)) {
-        phoneInput.setCustomValidity(lang === 'ar'
-          ? 'اكتب رقم موبايل مصري صحيح، مثل 01012345678 أو +20 1012345678.'
-          : 'Enter a valid Egyptian mobile number, such as 01012345678 or +20 1012345678.');
-        phoneInput.reportValidity();
-        phoneInput.focus();
+      if ((honeypot?.value || '').trim()) {
+        showSuccess();
         return;
       }
 
-      phoneInput.setCustomValidity('');
-      const phone = '+20' + phoneDigits;
-      const time = (document.getElementById('d-time')?.value || '').trim();
-      const lines = lang === 'ar'
-        ? ['مرحباً، عايز أحجز عرض توضيحي لنظام Pharmora:', '', 'الاسم: ' + name, 'الصيدلية: ' + pharmacy, 'عدد الفروع: ' + branches.selectedOptions[0].textContent.trim(), 'واتساب: ' + phone]
-        : ['Hello, I\'d like to book a Pharmora demo:', '', 'Name: ' + name, 'Pharmacy: ' + pharmacy, 'Branches: ' + branches.selectedOptions[0].textContent.trim(), 'WhatsApp: ' + phone];
-      if (time) lines.push((lang === 'ar' ? 'الوقت المفضّل: ' : 'Preferred time: ') + time);
-      window.open('https://wa.me/' + CONTACT.wa + '?text=' + encodeURIComponent(lines.join('\n')), '_blank');
+      const name = nameInput.value.trim();
+      const pharmacy = pharmacyInput.value.trim();
+      const rawPhone = phoneInput.value.trim();
+      const email = (emailInput?.value || '').trim();
+
+      if (!name) return failField(nameInput, t('dm.reqName'));
+      if (!pharmacy) return failField(pharmacyInput, t('dm.reqPharm'));
+      if (!rawPhone) return failField(phoneInput, t('dm.reqPhone'));
+
+      const phone = egyptianMobile(rawPhone);
+      if (!phone) return failField(phoneInput, t('dm.badPhone'));
+
+      if (email && !EMAIL_RE.test(email)) return failField(emailInput, t('dm.badEmail'));
+
+      const branches = parseBranchCount(branchesInput?.value);
+      if (branches.empty) return failField(branchesInput, t('dm.reqBranches'));
+      if (branches.invalid) return failField(branchesInput, t('dm.badBranches'));
+
+      const payload = {
+        type: 'demo',
+        name,
+        pharmacy_name: pharmacy,
+        phone,
+        number_of_branches: branches.value,
+        source: 'website'
+      };
+      if (email) payload.email = email;
+      const message = buildDemoMessage((document.getElementById('d-time')?.value || '').trim());
+      if (message) payload.message = message;
+
+      setDemoLoading(true);
+      try {
+        const res = await fetch(CONTACT.demoApi, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json',
+            'Accept-Language': currentLang() === 'ar' ? 'ar' : 'en'
+          },
+          body: JSON.stringify(payload)
+        });
+
+        if (res.status === 201) {
+          showSuccess();
+          return;
+        }
+        if (res.status === 422) {
+          let fieldMsg = '';
+          try {
+            const body = await res.json();
+            const errors = (body && body.errors) || {};
+            if (errors.email) fieldMsg = t('dm.badEmail');
+            else if (errors.number_of_branches) fieldMsg = t('dm.badBranches');
+          } catch (err) { /* ignore body */ }
+          const msg = fieldMsg || t('dm.err422');
+          if (fieldMsg === t('dm.badEmail') && emailInput) failField(emailInput, msg);
+          else if (fieldMsg === t('dm.badBranches') && branchesInput) failField(branchesInput, msg);
+          else setDemoStatus(statusEl, 'err', msg);
+          return;
+        }
+        if (res.status === 429) {
+          setDemoStatus(statusEl, 'err', t('dm.err429'));
+          return;
+        }
+        setDemoStatus(statusEl, 'err', t('dm.err'));
+      } catch (err) {
+        setDemoStatus(statusEl, 'err', t('dm.err'));
+      } finally {
+        setDemoLoading(false);
+      }
     });
   }
 });

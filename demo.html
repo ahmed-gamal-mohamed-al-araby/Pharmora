@@ -104,7 +104,7 @@
       </div>
       <div class="demo-flow-art">
         <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/POS</span></div>
+          <div class="browser-bar"><i></i><i></i><i></i><span data-i18n="dm.screen">نقطة البيع</span></div>
           <img src="assets/img/insurance-pos-light.png" data-dark="assets/img/insurance-pos-dark.png" data-light="assets/img/insurance-pos-light.png" alt="Pharmora POS" width="1100" height="700" loading="lazy">
         </div>
       </div>
@@ -119,7 +119,7 @@
       <div>
         <span class="eyebrow" data-i18n="dm.formEy">احجز عرض توضيحي</span>
         <h2 data-i18n="dm.formT">احجز عرض توضيحي</h2>
-        <p data-i18n="dm.formS">املأ البيانات وابعت على واتساب. هنؤكّد الموعد ونجهّز عرضًا توضيحيًا على شغلك.</p>
+        <p data-i18n="dm.formS">املأ البيانات. هنستلم الطلب ونتواصل معاك لعرض Pharmora على شغلك.</p>
         <ul class="trust-list">
           <li data-i18n="dm.b1">عربي أو إنجليزي — حسب راحتك</li>
           <li data-i18n="dm.b2">مناسب لصيدلية واحدة أو فروع</li>
@@ -128,23 +128,29 @@
       </div>
       <div class="form-card">
         <h3 data-i18n="dm.formH">بيانات حجز العرض التوضيحي</h3>
-        <form id="demoForm">
+        <form id="demoForm" novalidate>
           <label for="d-name" data-i18n="dm.fName">الاسم</label>
-          <input id="d-name" type="text" required data-i18n-ph="dm.fNameP" placeholder="د/ أحمد">
+          <input id="d-name" name="name" type="text" required autocomplete="name" data-i18n-ph="dm.fNameP" placeholder="د/ أحمد">
           <label for="d-pharmacy" data-i18n="dm.fPharm">اسم الصيدلية</label>
-          <input id="d-pharmacy" type="text" required data-i18n-ph="dm.fPharmP" placeholder="صيدلية النور">
+          <input id="d-pharmacy" name="pharmacy_name" type="text" required autocomplete="organization" data-i18n-ph="dm.fPharmP" placeholder="صيدلية النور">
           <label for="d-branches" data-i18n="dm.fBranches">عدد الفروع</label>
-          <select id="d-branches" required>
-            <option value="1" data-i18n="dm.br1">فرع واحد</option>
-            <option value="2-3" data-i18n="dm.br2">٢–٣ فروع</option>
-            <option value="4+" data-i18n="dm.br3">٤ فروع أو أكثر</option>
-          </select>
+          <input id="d-branches" name="number_of_branches" type="number" min="1" step="1" inputmode="numeric" required data-i18n-ph="dm.fBranchesP" placeholder="مثال: 3">
           <label for="d-phone" data-i18n="dm.fPhone">موبايل / واتساب</label>
-          <input id="d-phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx">
+          <input id="d-phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="01xxxxxxxxx">
+          <label for="d-email" data-i18n="dm.fEmail">البريد الإلكتروني (اختياري)</label>
+          <input id="d-email" name="email" type="email" autocomplete="email" inputmode="email" data-i18n-ph="dm.fEmailP" placeholder="name@example.com">
           <label for="d-time" data-i18n="dm.fTime">الوقت المفضّل</label>
-          <input id="d-time" type="text" data-i18n-ph="dm.fTimeP" placeholder="مثال: الخميس بعد الظهر">
-          <button type="submit" class="btn btn-primary"><span data-i18n="dm.send">احجز عرض توضيحي</span></button>
-          <p class="form-note" data-i18n="dm.note">الطلب بيفتح واتساب برسالة جاهزة — الصفحة مش بتخزن بيانات على سيرفر.</p>
+          <input id="d-time" name="message" type="text" data-i18n-ph="dm.fTimeP" placeholder="مثال: الخميس بعد الظهر">
+          <div class="hp-field" aria-hidden="true">
+            <label for="d-website">Website</label>
+            <input id="d-website" name="website" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn-primary" id="demo-submit">
+            <span class="btn-label" data-i18n="dm.send">احجز عرض توضيحي</span>
+            <span class="btn-loading" hidden data-i18n="dm.sending">جاري الإرسال…</span>
+          </button>
+          <p id="demo-form-status" class="form-status" role="status" aria-live="polite" hidden></p>
+          <p class="form-note" data-i18n="dm.note">هنستلم الطلب ونتواصل معاك لتأكيد الموعد. تقدر كمان تراسلنا على واتساب.</p>
           <p class="demo-wa-line"><span data-i18n="dm.waLine">أو راسلنا على واتساب:</span> <a data-wa href="https://wa.me/201023196425?text=أرغب%20في%20حجز%20عرض%20توضيحي%20لبرنامج%20Pharmora" target="_blank" rel="noopener" data-tel-label dir="ltr"></a></p>
         </form>
       </div>

@@ -114,7 +114,7 @@
 
         <div class="form-card">
           <h3 data-i18n="ct.formT">احجز عرض توضيحي — سيب بياناتك</h3>
-          <form id="leadForm">
+          <form id="leadForm" novalidate>
             <label for="f-name" data-i18n="ct.fName">اسمك</label>
             <input id="f-name" type="text" data-i18n-ph="ct.fNameP" placeholder="د/ أحمد محمد" required>
             <label for="f-pharmacy" data-i18n="ct.fPharm">اسم الصيدلية</label>
@@ -130,9 +130,15 @@
             </select>
             <label for="f-msg" data-i18n="ct.fMsg">موعد مناسب أو ملاحظة (اختياري)</label>
             <textarea id="f-msg" rows="3" data-i18n-ph="ct.fMsgP" placeholder=""></textarea>
-            <button type="submit" class="btn btn-primary">
-              <span data-i18n="ct.send">احجز عرض توضيحي</span>
+            <div class="hp-field" aria-hidden="true">
+              <label for="f-website">Website</label>
+              <input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off">
+            </div>
+            <button type="submit" class="btn btn-primary" id="contact-submit">
+              <span class="btn-label" data-i18n="ct.send">احجز عرض توضيحي</span>
+              <span class="btn-loading" hidden data-i18n="ct.sending">جاري الإرسال…</span>
             </button>
+            <p id="contact-form-status" class="form-status" role="status" aria-live="polite" hidden></p>
             <p class="form-note" data-i18n="ct.note"></p>
           </form>
         </div>

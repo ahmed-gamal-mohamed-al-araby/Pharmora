@@ -92,8 +92,8 @@
     <div class="reveal hero-visual">
       <div class="hero-art composition">
         <div class="browser main-screen">
-          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/dashboard</span></div>
-          <img src="assets/img/dashboard-light.jpeg" data-dark="assets/img/dashboard-dark.jpeg" data-light="assets/img/dashboard-light.jpeg" alt="Pharmora POS" width="1200" height="750" loading="eager" fetchpriority="high">
+          <div class="browser-bar"><i></i><i></i><i></i><span data-i18n="hero.screen">لوحة التحكم</span></div>
+          <img src="assets/img/dashboard-light.jpeg" data-dark="assets/img/dashboard-dark.jpeg" data-light="assets/img/dashboard-light.jpeg" alt="Dashboard" width="1200" height="750" loading="eager" fetchpriority="high">
         </div>
         <div class="browser floating-screen checkout-float">
           <div class="browser-bar"><i></i><i></i><i></i></div>
@@ -101,7 +101,7 @@
         </div>
         <div class="browser floating-screen dash-float">
           <div class="browser-bar"><i></i><i></i><i></i></div>
-          <img src="assets/img/POS-light.jpeg" data-dark="assets/img/POS-dark.jpeg" data-light="assets/img/POS-light.jpeg" alt="Dashboard" width="640" height="400" loading="lazy">
+          <img src="assets/img/POS-light.jpeg" data-dark="assets/img/POS-dark.jpeg" data-light="assets/img/POS-light.jpeg" alt="POS" width="640" height="400" loading="lazy">
         </div>
       </div>
     </div>
@@ -110,42 +110,67 @@
 
 <div class="strip trust-strip">
   <div class="container strip-inner">
-    <strong class="strip-title" data-i18n="strip.title">أمان وسيطرة كاملة</strong>
-    <span><b data-i18n="strip.s1">بيانات صيدليتك لوحدها</b></span>
-    <span><b data-i18n="strip.s2">أدوار وصلاحيات</b></span>
-    <span><b data-i18n="strip.s3">تسجيل مين عمل إيه</b></span>
-    <span><b data-i18n="strip.s4">نسخة احتياطية تلقائية</b></span>
-    <span><b data-i18n="strip.s5">دعم فني وتحديثات مستمرة</b></span>
+    <strong class="strip-title" data-i18n="strip.title">من الفاتورة لحد تقفيل الوردية</strong>
+    <span><b data-i18n="strip.s1">البيع بالباركود والوحدة</b></span>
+    <span><b data-i18n="strip.s2">خصم التشغيلة الأقرب صلاحية</b></span>
+    <span><b data-i18n="strip.s3">فصل حصة التأمين على نفس الفاتورة</b></span>
+    <span><b data-i18n="strip.s4">عهدة الدرج مع الوردية</b></span>
+    <span><b data-i18n="strip.s5">الربح بعد التكلفة مش إجمالي البيع</b></span>
   </div>
 </div>
+
+<section class="section wf-sec" id="workflow">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow" data-i18n="wf.eyebrow">يوم الشغل</span>
+      <h2 data-i18n="wf.title">من البيع للربح — نفس الفاتورة</h2>
+      <p data-i18n="wf.sub">الكاشير يقفل البيع مرة. المخزون والتأمين والدرج والربح يتحدثوا من نفس الفاتورة.</p>
+    </div>
+    <div class="demo-flow reveal">
+      <div class="steps wf-steps">
+        <div class="step">
+          <h3 data-i18n="wf.s1t">الكاشير يبيع</h3>
+          <p data-i18n="wf.s1d">باركود أو اسم. قرص / شريط / علبة. السعر على الوحدة الصحيحة.</p>
+        </div>
+        <div class="step">
+          <h3 data-i18n="wf.s2t">المخزون يتخصم</h3>
+          <p data-i18n="wf.s2d">الكمية تنزل من التشغيلة الأقرب انتهاءً.</p>
+        </div>
+        <div class="step">
+          <h3 data-i18n="wf.s3t">التأمين يتحسب</h3>
+          <p data-i18n="wf.s3d">حصة المريض وحصة الشركة على نفس الفاتورة.</p>
+        </div>
+        <div class="step">
+          <h3 data-i18n="wf.s4t">الوردية تتسجل</h3>
+          <p data-i18n="wf.s4d">الفواتير على عهدة الموظف. آخر اليوم تشوف المتوقع مقابل المعدود.</p>
+        </div>
+        <div class="step">
+          <h3 data-i18n="wf.s5t">الربح يتحدث</h3>
+          <p data-i18n="wf.s5d">التكلفة والمرتجعات والمصروفات وحصة التأمين تدخل في الحساب.</p>
+        </div>
+      </div>
+      <div class="demo-flow-art">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span data-i18n="wf.screen">نقطة البيع</span></div>
+          <img src="assets/img/POS-light.jpeg" data-dark="assets/img/POS-dark.jpeg" data-light="assets/img/POS-light.jpeg" alt="POS" width="1100" height="700" loading="lazy">
+        </div>
+        <p class="wf-caption" data-i18n="wf.caption">نقطة البيع — فرع واحد، وردية مفتوحة، فاتورة بتتنقل للمخزون والدرج.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
 <section class="section" id="outcomes">
   <div class="container">
     <div class="section-head reveal">
       <span class="eyebrow" data-i18n="out.eyebrow">شغل الصيدلية</span>
-      <h2 data-i18n="out.title">مبيعات أوضح - مخزون تحت السيطرة - يومية أدق.</h2>
-      <p data-i18n="out.sub">كل قسم تحت يشرح مشكلة بتقابلها في الشغل، إزاي النظام بيحلها، وإيه اللي يتحسن في الربحية والهدر.</p>
+      <h2 data-i18n="out.title">من الكاشير… للمخزون… للربح.</h2>
+      <p data-i18n="out.sub">الفاتورة الواحدة بتخصم التشغيلة، تحسب التأمين، وتتسجل على الوردية. بعدها تشوف الصلاحية، المستحقات، وصافي الربح.</p>
     </div>
 
     <article class="outcome reveal">
       <div class="outcome-text">
-        <span class="outcome-label" data-i18n="out.ins.label">١ — مطالبات التأمين</span>
-        <p class="outcome-problem" data-i18n="out.ins.problem">المشكلة: آخر الشهر بتضيع أيام في فصل حصة التأمين ومراجعة المطالبات يدوي.</p>
-        <h3 data-i18n="out.ins.solution">الحل: فصل تلقائي لحصة المريض وشركة التأمين على مستوى كل دواء</h3>
-        <p data-i18n="out.ins.desc">تغطية لكل شركة، متابعة المطالبة لحد التحصيل، وأرقام واضحة لمستحقاتك — من غير إكسيل.</p>
-        <p class="outcome-result"><strong data-i18n="out.ins.result">النتيجة: اعرف مستحقاتك بدقة ووفّر أيام المراجعة اليدوية.</strong></p>
-      </div>
-      <div class="outcome-art">
-        <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/Claims</span></div>
-          <img src="assets/img/Claims-light.jpeg" data-dark="assets/img/Claims-dark.jpeg" data-light="assets/img/Claims-light.jpeg"  alt="Insurance claims" width="1100" height="700" loading="lazy">
-        </div>
-      </div>
-    </article>
-
-    <article class="outcome outcome-flip reveal">
-      <div class="outcome-text">
-        <span class="outcome-label" data-i18n="out.fefo.label">٢ — المخزون والصلاحية</span>
+        <span class="outcome-label" data-i18n="out.fefo.label">١ — المخزون والصلاحية</span>
         <p class="outcome-problem" data-i18n="out.fefo.problem">المشكلة: أدوية بتقرب من الانتهاء وبتنتهي في الدرج — خسارة صامتة كل شهر.</p>
         <h3 data-i18n="out.fefo.solution">الحل: مخزون بالصلاحية — الأقرب صلاحية يتصرف أولاً</h3>
         <p data-i18n="out.fefo.desc">كل تشغيلة بتاريخها، تنبيهات قبل الانتهاء، والأقرب انتهاءً يتصرف أولاً — من غير ما تبيع الأبعد صلاحية بالغلط.</p>
@@ -153,8 +178,24 @@
       </div>
       <div class="outcome-art">
         <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/Medicines</span></div>
-          <img src="assets/img/Medicines-light.jpeg" data-dark="assets/img/Medicines-dark.jpeg" data-light="assets/img/Medicines-light.jpeg"  alt="Medicines and batches" width="1100" height="700" loading="lazy">
+          <div class="browser-bar"><i></i><i></i><i></i><span data-i18n="out.fefo.screen">المخزون والصلاحية</span></div>
+          <img src="assets/img/Medicines-light.jpeg" data-dark="assets/img/Medicines-dark.jpeg" data-light="assets/img/Medicines-light.jpeg" alt="Inventory and expiry" width="1100" height="700" loading="lazy">
+        </div>
+      </div>
+    </article>
+
+    <article class="outcome outcome-flip reveal">
+      <div class="outcome-text">
+        <span class="outcome-label" data-i18n="out.ins.label">٢ — مطالبات التأمين</span>
+        <p class="outcome-problem" data-i18n="out.ins.problem">المشكلة: آخر الشهر بتضيع أيام في فصل حصة التأمين ومراجعة المطالبات يدوي.</p>
+        <h3 data-i18n="out.ins.solution">الحل: فصل تلقائي لحصة المريض وشركة التأمين على مستوى كل دواء</h3>
+        <p data-i18n="out.ins.desc">تغطية لكل شركة، متابعة المطالبة لحد التحصيل، وأرقام واضحة لمستحقاتك — من غير إكسيل.</p>
+        <p class="outcome-result"><strong data-i18n="out.ins.result">النتيجة: اعرف مستحقاتك بدقة ووفّر أيام المراجعة اليدوية.</strong></p>
+      </div>
+      <div class="outcome-art">
+        <div class="browser">
+          <div class="browser-bar"><i></i><i></i><i></i><span data-i18n="out.ins.screen">مطالبات التأمين</span></div>
+          <img src="assets/img/Claims-light.jpeg" data-dark="assets/img/Claims-dark.jpeg" data-light="assets/img/Claims-light.jpeg" alt="Insurance claims" width="1100" height="700" loading="lazy">
         </div>
       </div>
     </article>
@@ -169,7 +210,7 @@
       </div>
       <div class="outcome-art">
         <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/reports/Profit</span></div>
+          <div class="browser-bar"><i></i><i></i><i></i><span data-i18n="out.pnl.screen">الأرباح والخسائر</span></div>
           <img src="assets/img/Profit-light.jpeg" data-dark="assets/img/Profit-dark.jpeg" data-light="assets/img/Profit-light.jpeg" alt="Profit and loss" width="1100" height="700" loading="lazy">
         </div>
       </div>
@@ -185,8 +226,8 @@
       </div>
       <div class="outcome-art">
         <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/Shifts</span></div>
-          <img src="assets/img/Shifts-light.png" data-dark="assets/img/Shifts-dark.png" data-light="assets/img/Shifts-light.png" alt="shifts" width="1100" height="700" loading="lazy">
+          <div class="browser-bar"><i></i><i></i><i></i><span data-i18n="out.cash.screen">الورديات</span></div>
+          <img src="assets/img/Shifts-light.png" data-dark="assets/img/Shifts-dark.png" data-light="assets/img/Shifts-light.png" alt="Shifts" width="1100" height="700" loading="lazy">
         </div>
       </div>
     </article>
@@ -201,14 +242,15 @@
       </div>
       <div class="outcome-art">
         <div class="browser">
-          <div class="browser-bar"><i></i><i></i><i></i><span>app.pharmora.com/Branches</span></div>
-          <img src="assets/img/branch-light.jpeg" data-dark="assets/img/branch-dark.JPG" data-light="assets/img/branch-light.jpeg" alt="Branch management across operations" width="1100" height="700" loading="lazy">
+          <div class="browser-bar"><i></i><i></i><i></i><span data-i18n="out.branch.screen">الفروع</span></div>
+          <img src="assets/img/branch-light.jpeg" data-dark="assets/img/branch-dark.JPG" data-light="assets/img/branch-light.jpeg" alt="Branch management" width="1100" height="700" loading="lazy">
         </div>
       </div>
     </article>
 
     <div class="section-inline-cta reveal center">
-      <p data-i18n="out.ctaLead">جاهز تشوف إزاي ده يشتغل على شغلك؟</p>
+      <p data-i18n="out.ctaLead">عايز تشوف فاتورة من صيدليتك على النظام؟</p>
+      <p class="cta-trust" data-i18n="out.ctaTrust">بنجهز الأصناف والصلاحيات. حساب صيدليتك منفصل. من غير التزام.</p>
       <div class="hero-ctas section-inline-cta-btns">
         <a class="btn btn-primary" href="demo.html" data-i18n="out.ctaPrimary">احجز عرض توضيحي</a>
         <a class="btn btn-ghost" href="index.html#pricing" data-i18n="out.ctaSecondary">قارن الخطط والأسعار</a>
@@ -254,7 +296,7 @@
     <div class="section-head reveal">
       <span class="eyebrow" data-i18n="sec.eyebrow">الأمان والثقة</span>
       <h2 data-i18n="sec.title">بيانات صيدليتك وفلوسك — تحت سيطرتك</h2>
-      <p data-i18n="sec.sub">ثلاث حاجات أي صاحب صيدلية بيسأل عليها قبل ما ينقل شغله لنظام رقمي.</p>
+      <p data-i18n="sec.sub">بعد ما تقتنع بالشغل اليومي: بيانات صيدليتك لوحدها، صلاحيات الموظفين، ونسخة احتياطية — دي أسباب تطمّن مش أسباب الشراء.</p>
     </div>
     <div class="trust-arch">
       <div class="trust-pillar reveal">
@@ -446,6 +488,8 @@
       <span class="cta-kicker" data-i18n="cta.kicker">الخطوة التالية</span>
       <h2 data-i18n="cta.title">احجز عرض توضيحي — على شغل صيدليتك</h2>
       <p data-i18n="cta.sub">نعرض: بيعة بتأمين · صرف بالصلاحية · تقفيل وردية · تقرير أرباح. بدون التزام أو بطاقة ائتمان.</p>
+      <p class="cta-trust-lead" data-i18n="cta.trustLead">عايز تشوف فاتورة من صيدليتك على النظام؟</p>
+      <p class="cta-trust" data-i18n="cta.trustBody">بنجهز الأصناف والصلاحيات. حساب صيدليتك منفصل. من غير التزام.</p>
       <div class="btns">
         <a class="btn btn-primary" href="demo.html" data-i18n="cta.demo">احجز عرض توضيحي</a>
         <a class="btn btn-ghost cta-ghost-light" href="security.html" data-i18n="cta.sec">اطّلع على الأمان</a>
